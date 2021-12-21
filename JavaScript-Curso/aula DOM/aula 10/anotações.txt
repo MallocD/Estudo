@@ -1,0 +1,7 @@
+        -->onclik --> Quando clicar o evento será inicializado
+//onmouseenter--> Quando o mouse entrar na área
+//onclick= "clicar()" onmouseenter= "entrou()" onmouseout="saiu()"-->Pode ser feita no elemento, juntando o html e o java .~
+        -->addEventListener('click, clicar)-> Ou utilizando diretamente no JavaScript com o ouvidor
+//document.getElementById('area').addEventListener('click',clicar)
+//document.getElementById('area').addEventListener('mouseenter', entrou)
+//document.getElementById('area').addEventListener('mouseout', saiu)

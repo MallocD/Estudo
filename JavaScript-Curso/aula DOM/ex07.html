@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mic</title>
+</head>
+<body>
+    <style>
+        body{background-color: #086272; color:white;font: normal 20pt Verdana;}  
+        p{color: black}
+    </style>
+    <h1> Iniciando estudos ao DOM</h1>
+    <h2 class = '1'>Treino aloi</h2>
+    <h2 class = '1'>Treino aloi</h2>
+    <p>Ola, João!</p>
+    <p id= "m"> Clique em mim</p>
+    <h3> DOM </h3>
+    <div name= "a">Clique aqui</div>
+    <p>DOCUMENT OBJECT MODEL</p>
+    <script>
+        var corpo = window.document.body//Váriavel utilizada para mudar cor do documento
+        var p1 = window.document.getElementsByTagName('p')[1]///Seleceiona mais de um elemento (p,h,h1,h2);
+        window.document.write('Está escrito assim: ' + p1.innerText )//Escreve na tela utilizando a váriavel;
+        p1.style.color = 'black'//Mudar cor da font de p1
+        corpo.style.background = ''//Mudar cor do documento
+        var idd = window.document.getElementById('m')//Seleceiona o elemento do documento por meio de ID
+        
+
+        
+        idd.innerText= "raaa"
+        idd.style.color = "pink"
+        var p2 = window.document.getElementsByTagName('p')[2]
+        p2.style.font = 'normal 12pt verdana'
+        document.getElementsByName('m')[0]
+        document.getElementsByName('m')[0].innerText = "sim"
+        document.getElementsByClassName('1')[0].innerText = "Fé"
+        var dd = window.document.getElementsByName('a')
+        dd.innerText= "alo"
+        
+
+    </script>
+   
+</body>
+</html>

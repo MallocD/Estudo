@@ -1,0 +1,110 @@
++ -->Concatenção
+Number.parseInt(n);Number.parseFloat(n);Number(n)--> Converte independente se for float ou int;
+String(n);n.toString();--> Conversão de number for String;
+` string desejada ${variavel}` --> Template string
+//s.length--> quantos caractéres tem a string;
+//s.toUpperCase()--> colocar todas as letras da string para maísculo;
+//s.toLowerCase()--> colocar todas as letras da string para mínusculo;
+//document.write()--> Escreve no body da página;
+//n.toFixed(2)--> Casas decimaisn1.toFied
+//n.toFixed(2).replace('.' ,',')--> trocar . por ,;
+//n.toLocaleString('pt-BR', {style:'currency',currency : 'BRL'})-- localização de strings globais, serve para conversão da moeda;
+//window.alert("String")-->Mostrar caixa de texto
+//window.prompt("String")--> Mostra caizza
+window.alert()--> Criar poup up
+window.confirm?()--> Perguntar algo em forma de poup(Lógica somente)
+window.prompt()-->Maneira em que o úsario pode escrever na caixa de texto do pouop
+Tipos primitivos-->numbers,boolean and string;
+\\--Typeofs --//
+numbers --> Todos os números (Reais, naturais, inteiros, doubles);
+//NaN-->
+//Infinity-->
+string--> Todos os caractéres em conjunto;
+boolean--> True and false;
+object--> {}[];
+//arrays-->
+function--> function(){};
+document.write(`Seu nome tem ${nome.length} letras<br/>`);//Conta a quantidade de letras em uma string
+        document.write(`Seu nome em letras maiúsculas fica assim ${nome.toUpperCase()}<br/>`)//Deixa a string em fonte caixa alta
+        document.write(`Seu nome em letras mínusculas fica assim ${nome.toLowerCase()}<br/>`)//Deixa a string em font caixa baixa
+
+
+//null-->
+
+Operadores-->
+
+        \\Ordem de Precedência//
+
+()--1°
+**--2°
+* / %--3°
++-|-->4°
+
+       \\Atribuição Simples// and \\Auto-Atribuições//
+var a = 2
+var b = 2+a
+----------
+var n = 3
+n = n+4
+n= n-5
+n+=4--> auto referência (incremento) 
+n**=4
+--A variável irá recber o novo valor--
+       \\Incremento//
+x++
+x--
+Pré incremento --> ++x --> O valor aparecerá antes;
+Pós incremento --> x++ O valor aparecerá depois;
+||pós
+x= 12
+x++
+12
+x
+13
+||Pré  
+x= 12
+++x
+13
+x
+13
+    \\Relacionais//
+5>2--Maior que --> True
+7<4--Menor que -->False
+8>=8--Maior ou igual-->True
+9<=7-->Menor ou igual--> False
+5==5 -- Igual -- > True
+4!=4 --> Diferente -- >False
+       Indentidade -->
+5===5-->True
+5== '5'--> True
+5=== '5' --> False --> Três sinais de = analisa se tem o mesmo valor e o mesmo tipo (string,number,boolean);
+5===5 -->True
+
+       \\Lógicos//
+!-->Negação--Inverte o valor;
+&&--> Conjunção-->Apenas se os dois valores forem verdadeiros;
+|| -->Disjunção--> Um deles sejam verdadeiro(Pode ser os dois verdadeiro ou apenas um);
+
+a>b && b% 2 ==0 --> 1° aritimético, 2° relacional, 3° lógico
+
+      \\Ordem de Precedência//
+1° Aritiméticos
+2° Relacionais
+3° Lógicos -->> ! && ||
+
+	\\Operadores ternários//
+ var res= 3>2?true:false;
+
+ DOM--
+  getElementsByTagname()//Seleceiona mais de um elemento (p,h,h1,h2);
+       document.getElementById()
+        document.getElementsByName('a')[0]
+        document.getElementsByName('a')[0].innerText 
+        document.getElementsByClassName('1')[0].innerText 
+        document.window
+        document.querySelector('div.msg')--> Classe// serve para alterar com facilidade de ID para class ou vice versa
+        document.querySelector('div#msg')--> ID
+
+Aula 12 
+var agora = new Date()//Pegar horas do sistema
+var hora = agora.getHours()//Pegar horas do sistema

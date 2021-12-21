@@ -1,0 +1,25 @@
+
+    body{
+        background-color: #758997f8;
+        font: normal 15pt Verdana;
+    }
+    header{
+        text-align: center;
+        color:white;
+    }
+    
+    section{
+        background: white;/*Coloca cor no corpo*/
+        border-radius:10px;/*Adiciona borda curvada a section*/
+        text-align: center;
+        padding: 50px;/*Escala de tamanho*/
+        width: 500px;/* Ajustar tamanho em largura*/
+        height: 400px;/*Ajustar altura da section*/
+        margin : auto;/*Colocar centralizado ao body */
+        box-shadow:10px 10px 10px rgba(0, 0, 0, 0.432);/*Ajusta sombra em section*/
+    }
+    footer{
+        color:white;
+        text-align: center;
+        font-style: italic;
+    }
