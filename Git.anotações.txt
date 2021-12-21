@@ -1,0 +1,36 @@
+git init --> Criar um repositório do git;
+git add .--> Adiciona todas as mudanças;
+git add readme.md --> Um unico arquivo que foi modificado;
+git branch -M "main" --> Trocar de "master para main";
+git status --> Verifica o que foi mudado;
+git comit -m "criação" --> Dar nome as modificações feitas e como irá encontrá-las no github;
+git push origin main --> Adicionar ao github as mudanças feitas;
+git remote add origin https://github.com/MallocD/Teste.git --> Quando se for linkar e fazer a remotagem pela primeira vez do git ao github;
+git push -u origin main --> Adicionar ao git hub;
+
+--BRANCH--
+git checkout -b "nome" --> Criar nova brunch, assim passando a ser desenvolvido em uma nova ramificação.
+git checkout "nome da branch" --> Troca a branch.
+git checkout "nome do arquivo" --> Volta a versão antiga do arquivo após salva-lo sem o ter adicionado ao container ainda;
+git checkout >hash< --> Para usar determinada versão do projeto com base na hash;
+git add --> add as mudanças ao connteiner;
+git reset HEAD --> remover o conteúdo alterado do arquivo após já telo adicionado ao container;
+git reset --hard "hash da versão anterior a que irá ser apagada"
+git merge "nome do ramo que será mesclado ao  ramo master"
+git clone "link do https"
+
+touch a.txt > (Nome e tipo do arquivo a ser criado);
+git log--> obter  informações dos commits feitos
+git log --oneline--> ramificações --Nome dos arquivos
+git log --oneline --graph --all --> ver todas ramificações
+git log --graph --> Ver as ramificações de commits;
+git commit am- "Nome do commit" --> Serve para criar um novo commit sem ter que add a modificação;
+git checkout -b "Nome da nova ramificação" --> Cria nova ramificação
+
+
+
+
+git config --globlal user.email-->configurar email;
+git config --globlal user.name-->configurar senha;
+git config --globlal core.editor " caminho do compilador";
+git diff ->Verifica oq foi alterado

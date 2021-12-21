@@ -1,0 +1,26 @@
+MultiCursor-Editing:
+
+1° Shift+DownArrow, Shift+RightArrow, Shift+UpArrow and Shift+LeftArrow --> Seleciona as linhas e caractéres como se estivesse selecionando com o mouse
+
+2° Ctrl+Alt+UpArrow, Ctrl+Alt+DownArrow and Alt+Click --> Seleciona mais de uma linha para trabalhar nas duas ao mesmo tempo;
+
+IntelliSense:
+
+--Ctrl+Space --> Da sugestões de Atributos, classe e metódos
+
+Line Actions :
+
+1° Shift+Alt+UpArrow or Shift+Alt+DownArrow --> Copia a linha em que o mouse selecionou e a cola logo abaixo(Como se fosse uma duplicação)
+
+2° Alt+UpArrow and Alt+DownArrow --> Pega a linha que o mouse selecionou e a locomove para outra linha de acordo com Up ou Down;
+
+3° Ctrl+Shift+K --> Exclui tudo que tiver na linha selecionada pelo mouse;
+
+Rename Refactoring:
+
+Seleciona os caractéres(A escrita que desejar) e aperta F2 --> Serve para alterar todas os elementos que contenham essa mesma palavra ou caractéres.
+
+
+
+
+
