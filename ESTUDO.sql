@@ -665,3 +665,174 @@ FROM nomeDaTabela2
             SELECT Nome
             FROM FAMILIA
 
+--SQL AULA 29 -UPDATE
+
+UPDATE nomeDaTabela--> Tabela em qual será feita a mudança de valor da linha
+SET nomeDaColuna = 'mudança a ser feita'-->Coluna a qual será feita a mudança = a mudança dejesada
+WHERE nomeDaColuna b = '1'-->É necessário o WHERE para alterar sómente uma linha desejada, caso o contrário irá alterar todas
+
+        --EXEMPLO
+
+            UPDATE rg
+            SET CPF = 'xXx'-->Assim todas as linhas da coluna serão alteradas
+
+            UPDATE rg
+            SET CPF = '061'
+            WHERE nome = 'João Victor'-->Assim apenas as linhas das colunas que tenham esse valor serão alterados
+
+            UPDATE rg
+            SET CPF = '062'
+            WHERE cpf= 'xXx'
+
+
+
+--SQL AULA 30 DELETE 
+
+
+DELETE CPF
+FROM nomeDaTabela
+WHERE cpf = '061'
+
+DELETE FROM RG
+WHERE CPF is null --Sempre colocar a condição de qual deseja apagar se não todas serão apagadas
+
+
+--SQL AULA 31 -ALTER TABLE
+
+>Aprender a alterar estrutura de uma tabela utilizando ALTER TABLE
+
+ALTER TABLE nomeDaTabela -->Nome da tabela onde a coluna que deseja alterar está localizada
+ACAO 'nome' tipo
+
+--EXEMPLOS DO QUE PODE SER FEITO :
+-Add, Remover, or alterar uma coluna
+-Set valores padrões para uma coluna
+-Add ou remover restrições de colunas
+-Renomear uma tabela
+
+        --EXEMPLOS
+
+        ALTER TABLE FINA
+        add Likes int not null
+
+        ALTER TABLE Fina
+        add ativos bit -- Ação/nome/Tipo de dados --Adicionar nova tabela
+
+        ALTER TABLE Fina
+        ALTER COLUMN categoria varchar(50) not null --Alterar tamanho da quantidade de caractéres e o tipo de dados
+
+EXEC sp_RENAME ' nomeDaTabela.nomeDaColuna', 'novoNomeDaColuna', 'COLUMN'--Para alterar o nome de uma coluna
+
+EXEC sp_rename 'nomeDaTabela', 'NovoNomedaTabela'--Alterar nome da tabela
+
+EXEC sp_rename 'fina.likes', 'dslikes', 'COLUMN'--EXemplo, trocando o nome da coluna likes para dslikes
+
+        ALTER TABLE nomedaTabela DROP COLUMN nomedacoluna;--Excluir colunas das tabelas
+
+        ALTER TABLE fina
+        DROP COLUMN dslikes--Exemplo
+
+
+
+        --DESAFIO
+
+        CRIAR UMA TABELA NOVA
+        
+        CREATE TABLE sad(
+        Java int not null,
+        Js char(10) not null unique,
+        html int PRIMARY KEY not null);
+
+        1-Alterar o tipo da coluna :
+
+        ALTER TABLE sad
+        alter COLUMN java int
+
+        2-Renomear o nome de uma coluna :
+
+        EXEC sp_rename 'sad.js', 'JavaScript', 'COLUMN'
+
+        3- Renomear nome da tabela
+
+        EXEC sp_rename 'sad', 'Hapy'
+
+--SQL AULA 32 DROP TABLE
+
+>Aprender a como dropar uma tabela do banco de dados 
+
+DROP TABLE nomedaTabela--Apagar Tabela do banco de dados
+
+drop table fina --Exemplo
+
+truncate table nomedatabela--Apagar todas informações contidas dentro da tabela
+
+truncate table sala--Exemplo
+
+ALTER TABLE Nome da tabela  
+DROP CONSTRAINT nome da chave--Apagar chaves primárias 
+
+EXEMPLOS:--Sempre apague a chave estrangeira primeiro
+                ALTER TABLE familia
+                drop constraint PK__Familia__7D8FE3B3ADCDC005--Chave prímaria
+
+                ALTER TABLE rg
+                drop constraint FK__RG__Nome__32E0915F--Chave estrangeira
+  
+
+ALTER TABLE dbo.DocExc   
+DROP CONSTRAINT CHK_ColumnD_DocExc;  
+
+--SQL AULA 33 CHECK COSTRAINT
+
+>Direcionado a aprender a criar restrições de valores que podem ser inseridos em uma coluna de uma tabela em banco
+de dados quando você está criando uma tabela nova
+
+
+CREATE TABLE CarteiraMotorista (
+    Id int not NULL,
+    Nome varchar(255) NOT NULL,
+    Idade int CHECK (IDADE>= 18)-->Condição para que se possa colocar valores dentro da coluna
+);
+INSERT INTO carteira (id,nome,idade)
+values(01, 'João Victor', 18)-->Dessa maneira a inserção ocorrerá corretamente
+
+INSERT INTO carteira (id,nome,idade)
+values(01, 'João Victor', 17)--> Ja nessa irá dar erro por conta da idade menor que 18
+
+--SQL AULA 34 NOT NULL CONSTRAINT
+
+CREATE TABLE CarteiraMotorista (
+    Id int not NULL,--Restrição not null
+    Nome varchar(255) NOT NULL,--Restrição not null
+    Idade int CHECK (IDADE>= 18)
+
+    CREATE TABLE sad(
+        Java int not null,
+        Js char(10) not null unique,
+        html int PRIMARY KEY not null);
+
+--SQL AULA 35 UNIQUE CONSTRAINT 
+
+>Como ter colunas únicas, porém diferentes de uma primary key , pode existir várias com restrição UNIQUE
+
+CREATE TABLE CarteiraMotorista (
+    Id int not NULL,--Restrição not null
+    Nome varchar(255) NOT NULL,--Restrição not null
+    Idade int CHECK (IDADE>= 18)
+    CodigoCNH int NOT NULL unique--> Não será possível inserir valores duplicados na mesma coluna
+
+--NÃO É POSSIVEL ALTERAR A RESTRIÇÃO DE NOT NULL EM UM COLUNA JÁ CRIADA
+
+
+--SQL AULA 36 VIEWS 
+
+> Nessa aula irenos aprender como usar VIEWS, que são tabelas criadas para consulta onde você usa outras tabelas
+como base para criar uma nova tabela de pesquisa com apenas dados específicos que você precisa de uma tabela;
+
+--EXEMPLO
+CREATE VIEW CITAS AS --Cria novo view//Serve como auxilio para recorrer a diversar colunas da tabela com um simples código após uma junção.
+SELECT  DISTINCT City, StateProvinceID, PostalCode
+FROM PERSON.ADDRESS
+
+
+SELECT * FROM CITA--Seleciona o novo view com apenas as colunas pedidas
