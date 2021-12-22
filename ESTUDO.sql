@@ -477,6 +477,50 @@ inner join person.Address a on p.StateProvinceID = a.StateProvinceID and name = 
 
 
 --SQL AULA 24 - SELF-JOIN
+
 SELECT top 20 a.addressid, b.addressid, b.city
 FROM person.Address a, Person.Address B --Realiza a comparação entre a mesma tabela, somente entre colunas diferentes
 where a.city = b.city
+
+SELECT a.BusinessEntityID, a.HireDate, b.BusinessEntityID 
+FROM HumanResources.Employee a, HumanResources.Employee b
+WHERE DATEPART(YEAR, a.HireDate) = DATEPART(YEAR,b.HireDate)--Procurar pessoas que foram contratadas no mesmo ano
+
+--SQL AULA 25 TIPO DE DADOS
+
+1.Boleanos
+2.Caractére
+3.Número
+4.Temporais
+
+--1.Boleanos 
+    É inicializado por padrão com valor null ou nulo, e pode receber tanto 1 ou 0
+    BIT
+
+--2.Caractéres
+    Tamanho Fixo -char//Permite inserir uma quantidade fixa de caractéres, porém sempre vai ocupar todos os espaços reservados, pelo fato de ser preencchido com valores vazios, assim ocupando espaço na memória 
+    Tamanhos variáveis -varchar ou nvarchar // permite inserir até uma quantidade que for definida, porém só usa o espaço que for utilizado, sem ocupar espaços vazios na memória
+
+--3.Numeros
+    --Valores exatos
+
+1. TINYINT -Não tem valor fracionado(é como o int do java)
+2. SMALLINT - O mesmo porém com limete maior
+3. INT - Mesma coisa porém maior ainda
+4. BIGINT - Mesma coisa porém maior ainda
+5. NUMERIC ou DECIMAL - Valores exatos, porém permite ter parte fracionadas, que tambem pode ser especificado a precisão e escala
+(escala é o número de dígitos na parte fracional);
+
+    --Valores Aproximados
+
+1. REAL - Precisão de até 15 números após a virgula
+2. FLOAT - Mesmo conceito de real
+
+--4.Temporais
+
+DATE - Armazena data no formato aaaa/mm/dados
+DATETIME - Armazena data e horas no formato aaaa/mm/dd:hh:mm:ss
+DATETIME2 - Armazena data e horas no formato aaaa/mm/dd:hh:mm:ss:ssss
+SMALLDATETIME - data e horas respeitando o limite entre '1900-01-01:00:00:00' até "2079-06-06:23:59:59"
+TIME - Apenas horas,minutos, segundos e milessungos respeitando o limite de "00:00:00.0000000" to "23:59:59:9999999"
+DATETIMEOFFSET - Permite armazenar informações de data e horas incluindo o fuso horário

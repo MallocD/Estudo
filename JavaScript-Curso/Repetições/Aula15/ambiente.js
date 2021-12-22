@@ -1,4 +1,4 @@
-var c = 1
+
 
 
 var c = 0
@@ -13,6 +13,7 @@ do {
 }while(c<3)
 
 
+
 for(c=0; c<10;c++){
-    console.log(`Pedaço ${c}`)
+    console.log(`Pedaço ${c}`)//Estrutura de repetição com váriavel de controle
 }
