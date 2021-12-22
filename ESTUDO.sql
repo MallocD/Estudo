@@ -431,7 +431,7 @@ FROM Production.product
 
 --SQL AULA 22 FUNÇÕES MATEMÁTICAS
 
-select linetotal - unitprice-->Subtrai uma tabela pela outra
+select linetotal - unitprice-->Subtrai uma tabela pela outra 
 from Sales.SalesOrderDetail
 
 select linetotal + unitprice-->Soma uma tabela com a outra
@@ -524,3 +524,144 @@ DATETIME2 - Armazena data e horas no formato aaaa/mm/dd:hh:mm:ss:ssss
 SMALLDATETIME - data e horas respeitando o limite entre '1900-01-01:00:00:00' até "2079-06-06:23:59:59"
 TIME - Apenas horas,minutos, segundos e milessungos respeitando o limite de "00:00:00.0000000" to "23:59:59:9999999"
 DATETIMEOFFSET - Permite armazenar informações de data e horas incluindo o fuso horário
+
+--SQL AULA 26 CHAVE PRIMÁRIA E ESTRANGEIRA
+
+*Aprender o que são chaves primárias e chaves estrangeiras
+*Exemplos de como utilizá-los para criar colunas e tabelas
+
+>Chave Primária:
+
+//Uma chave primária é basicamente uma coluna ou grupo de colunas, usada para identificar unicamente uma linha em uma tabela
+//Você consegue criar essas chaves primárias através das restrições(ou constraints em inglês), que são regras que você define quando está criando uma coluna
+//Assim quando você faz isso você está criando um índece único para aquela coluna ou grupo de colunas
+
+    CREATE TABLE nome_tabela(
+    nomeColuna tipoDeDados PRIMARY KEY
+    nomeColuna tipoDeDados ...
+    )
+
+>Chave estrangeira:
+
+*Uma chave estrangeira é um coluna ou grupo de colunas em uma tabela que identifica unicamente uma linha em outra tabela
+
+*É definida em uma tabela onde ela é apenas uma referência e não contém todos os dados ali
+
+*Então é simplismente uma coluna ou grupo de colunas que é uma chave primária em outra tabela
+
+*A tabela que contém a chave estrangeira é chamada de tabela referênciadora ou tabela filho. Já a tabela na qual a chave estrangeira
+é referenciada é chamada de tabela referenciada ou tabela pai.(Tabela pai contém todas informações e tabela filho é onde é apenas referenciada)
+
+//No SQL Server você define uma chave estrangeira atravez de um "Foreign Key Constraint" ou Restrição de chave estrangeira em
+//Uma Restrição de Chave Estrangeira indica que os valores em uma coluna ou grupo de colunas na tabela filho corerspondem aos valores na tabela pai
+//Nos podemos  entender que uma chave estrangeira mantem a  "integridade referencial"
+ 
+
+ --SQL AULA 27 CREATE TABLE
+
+CREATE TABLE nomeTabela(
+    coluna1 tipo de dados(int,datetime,boolean,char e etc) restricaoDaColuna
+    coluna2 tipo ,--Não é necessário haver restrições das colunas(é opcional)
+)
+
+COLUNA--Nome da coluna
+tipo--É o  tipo de dados (Numérico,booleano,Char,Temporais)
+Restrição da coluna-- É se posssui alguma restrição como (Not null,unique,primary key e etc)
+
+
+//Principais tipos de restrições que podem ser aplicadas
+
+*NOT NULL -Não permite a inserção de valores nulos na coluna
+*UNIQUE -Força que todos valores de uma colunas obrigatoriamente sejam diferentes
+*PRIMARY KEY -É a junção de NOT NULL E UNIQUE
+*FOREIGN KEY - Indentifica unicamente uma linha em outra tabela (Chave estrangeira)
+*CHECK - Força uma condição específica em uma coluna (como o WHERE , por exemplo, a coluna só ira aceitar valores acima de 10 )
+*DEFAULT - Força um valor padrão quando nenhum valor é passodo (Para que não haja valores nulos)
+
+--EXEMPLOS DE CREATE TABLE
+
+
+CREATE TABLE Canal (
+CanalId int PRIMARY KEY,
+Nome nvarchar(100) not null,
+ContagemInscritos int default 0,
+DataCriacao datetime not null);
+
+CREATE TABLE Video(
+VideoID INT PRIMARY KEY,
+Nome nvarchar(150) not null,
+Visualizações int default 0,
+Likes int DEFAULT 0,
+Dislikes INT DEFAULT 0,
+Duração int NOT NULL,
+CanalId INT FOREIGN KEY REFERENCES Canal(CanalId)--Utilizado para referenciar a chave primária, essa é a tabela filho utilizando o FOREIGN KEY
+);
+--DESAFIO
+                CREATE TABLE Quarto (
+                Lampada int PRIMARY KEY,
+                Smartv nvarchar(50) not null,
+                interruptor int not null,
+                cama int not null,
+                tomadas int 
+
+                );
+
+                CREATE TABLE Sala (
+                Lamapada int FOREIGN KEY REFERENCES Quarto(lampada),
+                sofa int,
+                tomada int,
+                interruptor int not null);
+              
+
+
+--SQL AULA 28 - INSERT INTO + DESAFIOS
+
+INSERT INTO nomeDaTabela(nomeDaColuna1,nomeDaColuna2)--Inserir novos valores a coluna de uma tabela
+VALUES(Valor1,valor2)
+
+INSERT INTO nomeDaTabela(coluna1)--Inserir valores da coluna de uma tabela e outra tabela e outra coluna
+SELECT coluna2
+FROM nomeDaTabela2
+
+    --EXEMPLO 
+    INSERT INTO Quarto(lampada,SmarTv,interruptor,cama)--Adicionando novos valores a uma tabela
+    VALUES(1,'SEMP', 1,1)
+
+    INSERT INTO sala(interruptor)--Copiando valores de uma tabela para outra
+    SELECT interruptor
+    FROM quarto
+
+            --DESAFIO
+
+            //1° CRIE UMA TABELA NOVA
+
+                CREATE TABLE Familia(
+                Nome nvarchar(50) PRIMARY KEY,
+                Idade int not null,
+                Telefone Nvarchar(20),
+                Email nvarchar(100),
+                Sexo char(1) not null,
+                Profissão nvarchar(20) not null,
+                Estado_Cívil nvarchar(15) not null);
+
+            //2°INSIRA 3 LINHAs DE DADOS AO MESMO TEMPO
+
+            INSERT INTO Familia(nome,idade,telefone,email,sexo,profissão,estado_cívil)
+            VALUES
+            ('João Victor',19,'(65) 9905-4015', 'joao337.jvs@gmail.com','M','Estudante','Solteiro'),
+            ('Suely',44,'(65) 99915-7177', ' ','F','Diarista','Casada'),
+            ('Joel',48,'(65) 99915-8816', ' ','M','Polical-Militar','Casado')
+
+            //3° CRIE UMA SEGUNDA TABELA
+
+            CREATE TABLE RG(
+            Nome nvarchar(50) FOREIGN KEY REFERENCES Familia(nome),
+            Data_de_Nascimento datetime not null,
+            CPF nvarchar(13));
+
+            //4° COPIAR O DADOS DA PRIMEIRA TABELA PARA A SEGUNDA
+
+            INSERT INTO RG (nome)
+            SELECT Nome
+            FROM FAMILIA
+
