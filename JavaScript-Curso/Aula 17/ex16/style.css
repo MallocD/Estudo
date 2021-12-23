@@ -9,7 +9,7 @@ section{
     background-color: white;
     margin : auto;
     width: 600px;
-    height: 400px;
+    height: 300px;
     border-radius:10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
 }
@@ -26,7 +26,4 @@ footer{
 div#res{
     text-align: center;
     
-}
-img{
-    border-radius: 300px;
 }
