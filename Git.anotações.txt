@@ -26,6 +26,9 @@ git log --oneline --graph --all --> ver todas ramificações
 git log --graph --> Ver as ramificações de commits;
 git commit am- "Nome do commit" --> Serve para criar um novo commit sem ter que add a modificação;
 git checkout -b "Nome da nova ramificação" --> Cria nova ramificação
+git fetch --> Baixa conteudos dos repositório remoto
+git push -->Atualiza o repositório remoto com as informações locais
+git pull-->Atualiza o repositóri local com as informações do remoto
 
 
 

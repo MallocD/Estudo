@@ -1,0 +1,32 @@
+\\BLOCOS PRINCIPAIS //
+
+*COMPONENTES
+
+--Dentro do componente está encapsulado
+Componente {
+     -Template
+     -Metadata : processamento das classes
+     -Dado a ser mostrado na tela(Data Binding)
+     -Comportamento da VIEW
+} 
+
+
+*DIRETIVAS
+
+Diretiva : Responsável por modificar elementos DOM  e/ou seu comportamento
+EX : <input="text"autoGrow>--> O input cresce de tamanho assim que recebe foco e ao perder foco volta ao tamanho normal
+
+
+*TEMPLATE
+
+*ROTEAMENTO
+
+-Router : Responsável pela navegação entre página
+
+*SERVIÇOS
+
+*DATA BINDING
+
+*INJEÇÃO DEPENDÊNCIA
+
+*META DATA
