@@ -13,12 +13,13 @@
     </style>
     <p>Ola</p>Ola, Mundo!
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número'));//recebe em string;
-        var n2= Number.parseInt(window.prompt('Digite outro número'));//recebe em string/var convert= Number.parseInt(n1,n2);
+        var n = []
+         n[0] = Number.parseInt(window.prompt('Digite um número'));//recebe em string;
+         n[1]= Number.parseInt(window.prompt('Digite outro número'));//recebe em string/var convert= Number.parseInt(n1,n2);
 
-        var soma = n1+n2;
+         n[2] = n[0]+n[1];
 
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}.`);//Template string;
+        window.alert(`A soma entre ${n[0]} e ${n[1]} é igual a ${n[2]}.`);//Template string;
         //'estou aprendendo' + s -->concatenação
         </script>
 </body>

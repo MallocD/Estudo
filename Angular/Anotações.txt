@@ -30,3 +30,65 @@ EX : <input="text"autoGrow>--> O input cresce de tamanho assim que recebe foco e
 *INJEÇÃO DEPENDÊNCIA
 
 *META DATA
+
+
+--CLI ANGULAR--
+ng new--Cria pastas com arquivos angular
+ng serve -- "serve" o projeto ao browser
+
+	---Aula 2 --
+
+	->Criando Arquivos
+
+Component-->ng generate component "nome"
+	ng g component "nome-->Forma mais simples de escrever
+
+Service-->ng g service diretório/"nome" -->Cria serviços
+
+Directive-->ng g directive meu-directive
+
+Pipe-->ng g pipe meu-pipe
+
+Class-->ng g class minha-class
+
+Interface-->ng g interface minha-interface
+
+Enum-->ng g enum meu-enum
+
+
+Get-ExecutionPolicy -->Verifica como está a permissão para rodar scripts do powwer shell
+Set-ExecutionPolicy "Nome da permissão"-- Ex : Set-ExecutionPolicy RemoteSigned -- Setar uma nova permissão para rodar scripts
+
+Set-ExecutionPolicy -Scope CorrentUser-->Setar direto no terminal que não seja o PowerShell 
+ 
+Restricted: É valor padrão (Windows 8, Windows Server 2012, and Windows 8.1) , não permite que nenhum arquivo seja executado isso inclui arquivos de configuração (.ps1xml), módulos (.psm1) e .ps1
+
+AllSigned: Permite a execução de arquivos, porém necessita que os arquivos sejam assinados por um publicador confiável.
+
+Unrestricted: Scripts não assinados podem rodar.
+
+Bypass: Nada é bloqueado e não emite warnings ou prompts (pergunta se deseja executar algo por exemplo)
+
+Undefined: Define a politica de execução indefinida. Se todos os escopos forem Undefined por padrão ela vira Restricted. Pode verificar os diferentes níveis com:
+
+--Aula 3, Usando pré-processadores:
+
+ Comandos utilizados para definir o estilo do css do projeto angular>
+
+--Utilizar ao criar novo projeto angular:
+
+>ng new meu-p --style=sass
+>ng new meu-p --style=less
+>ng new meu --style=stylus
+
+--  Utilizar com o projeto já existente:
+
+Podendo assim modificar o estilo css de um projeto ja criado>
+
+>ng set.defaults.styleExt scss
+>ng set.defaults.styleExt less
+>ng set.defaults.styleExt styl
+
+--Aula 4 CLI
+
+*ng lint -->Verifica se a erros de boas práticas no código

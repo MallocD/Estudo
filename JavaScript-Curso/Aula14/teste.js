@@ -2,6 +2,8 @@
 
 
 function verifica() {
+
+
  var data = new Date()
  var ano = data.getFullYear()
  var anoN = document.getElementById('ano')

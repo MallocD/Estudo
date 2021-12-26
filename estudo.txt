@@ -109,3 +109,25 @@ String(n);n.toString();--> Conversão de number for String;
 //window.alert("String")-->Mostrar caixa de texto
 //window.prompt("String")--> Mostra caizza
 //document.createElement('option') --> Cria uma tabela com diversas opções dinamicamente
+
+//PROMPT DE COMANDO DO WINDWOS
+
+NULL- Cria novo arquivo
+DIR- Ve os arquivos dentro de um diretório
+CLS- Limpa o cmd
+ng new -- Cria uma pasta com o angular
+ng serve -- "serve" o projeto ao browser
+Get-ExecutionPolicy -->Verifica como está a permissão para rodar scripts do powwer shell
+Set-ExecutionPolicy "Nome da permissão"-- Ex : Set-ExecutionPolicy RemoteSigned -- Setar uma nova permissão para rodar scripts
+
+Set-ExecutionPolicy AllSigned 
+ 
+Restricted: É valor padrão (Windows 8, Windows Server 2012, and Windows 8.1) , não permite que nenhum arquivo seja executado isso inclui arquivos de configuração (.ps1xml), módulos (.psm1) e .ps1
+
+AllSigned: Permite a execução de arquivos, porém necessita que os arquivos sejam assinados por um publicador confiável.
+
+Unrestricted: Scripts não assinados podem rodar.
+
+Bypass: Nada é bloqueado e não emite warnings ou prompts (pergunta se deseja executar algo por exemplo)
+
+Undefined: Define a politica de execução indefinida. Se todos os escopos forem Undefined por padrão ela vira Restricted. Pode verificar os diferentes níveis com:

@@ -1,0 +1,12 @@
+Variáveis compostas->
+
+var a = [2,3,4,5] <-- Cabe mais de um valor que serão chamados pelo seu índece-->(0,1,2,3)
+a--> Quando for uma variável composta é chamada de array ou vetor em português.
+Elementos são os indices que contem valores.
+
+
+let num = [2,5,2]
+num [3] = 6 -->Adiciona valor a array a uma determinada posição
+num.push(7)--> Irá adcionar um valor na ultima posição
+
+console.log(num[1])
