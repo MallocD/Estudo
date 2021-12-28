@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(5, 83, 148);
+    color : white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    padding :50px;
+    background-color: white;
+    margin : auto;
+    width: 600px;
+    height: 400px;
+    border-radius:10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+}
+div{
+    color:black;
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    font-style: italic;
+    font-size:15px;
+}
+div#res{
+    text-align: left;
+    
+}
+select { 
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    border-radius: 300px;
+}

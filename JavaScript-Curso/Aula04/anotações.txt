@@ -108,3 +108,10 @@ a>b && b% 2 ==0 --> 1° aritimético, 2° relacional, 3° lógico
 Aula 12 
 var agora = new Date()//Pegar horas do sistema
 var hora = agora.getHours()//Pegar horas do sistema
+
+
+Variáveis const , let , var :
+
+const --> Só pode ser declarada pra um bloco, seu valor tem que ser atíbuido no momento de sua declaração, e o valor não pode ser alterado com outra declaração.
+var--> É um declaração global, a var pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;
+let-->Só pode ser declarada pra um bloco, pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;
