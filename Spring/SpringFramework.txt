@@ -1,0 +1,29 @@
+\\\\\\\Core e Beans//////
+
+*Estrutura --> Partes fundamentais
+
+*IoC--> Inversão de Controles-->É um príncipio de design de programas de computadores onde a sequência(controle) de chamadas dos métodos
+é invertida em relação ao que foi programado, ou seja, ela não é determinada pelo programador. O Spring é quem vai determinar o que 
+será executado primeiro, qual classe será executada primeiro e etc.
+
+*Injeção de Dependências--> 
+
+*BeanFactory--> Implementação, fornece uma maneira de criar uma factory em tempo de execução.
+
+\\\Context///
+
+*Core e Beans=> Herda
+
+*Internacionalização=> A partir de menssagens, criação de arquivos
+
+*ApplcationContext=> Versão melhorada da BeanFactory
+
+
+\\\Expression Language///
+
+-> Define nossos objetos em uma configuração (xml) em tempo de execução, valores e comportamentos e de bens e passa para o Spring
+
+
+
+
+

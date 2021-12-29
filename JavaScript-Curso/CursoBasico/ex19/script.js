@@ -19,7 +19,7 @@ function inLista(n,l){
                 }
 }
 function adicionar(){
-         if(isNumero(num.value) && inLista(num.value, val)){
+         if(isNumero(num.value) && inLista(num.value, val)){//oLAAA
                 val.push(Number(num.value))//Adicionar o valor a array (Lista)
                 let item = document.createElement('option')
                 item.text = `O valor ${(num).value} foi adicionado`
