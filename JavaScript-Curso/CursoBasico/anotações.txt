@@ -112,6 +112,7 @@ var hora = agora.getHours()//Pegar horas do sistema
 
 Variáveis const , let , var :
 
-const --> Só pode ser declarada pra um bloco, seu valor tem que ser atíbuido no momento de sua declaração, e o valor não pode ser alterado com outra declaração.
-var--> É um declaração global, a var pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;
-let-->Só pode ser declarada pra um bloco, pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;
+const --> Só pode ser declarada pra um bloco(Escopo local), seu valor tem que ser atíbuido no momento de sua declaração, e o valor não pode ser alterado com outra declaração.
+Const --> Pode ser modificada em arrays e objtos por exemplo : const a= {nome:"joao"}; a.nome= "Carito" --> Assim o novo valor sera carito
+var--> É um declaração global(Escopo global), a var pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;
+let-->Só pode ser declarada pra um bloco(Escopo local), pode ser declarada com um valor vazio e ser atribuido depois, pode ser alterado e receber um novo valor;

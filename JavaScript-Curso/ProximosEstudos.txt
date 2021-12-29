@@ -5,7 +5,7 @@ Call backs
 Obejtos-->
 A diferença entre objto e array é que nas arrays são chamadas pelos índeces e no objeto você pode nomear os "índeces"
 Por exemplo : let jogos = {ps4 : Mvm, ps5 :Mile, PC : cs}
-Quando for requisitada por exemplo o ps4 do objeto jogos aparecera assim : console.log(jogos(ps4))--> Mvm
+Quando for requisitada por exemplo o ps4 do objeto jogos aparecera assim : console.log(jogos.ps4)--> Mvm
 
 Moduralização-->
 

@@ -1,0 +1,28 @@
+Para começar um código em JSON é utilizado -->
+[{ 
+Declarar strings com " " e : --> "nome":"João";,
+Declarar objeto --> "carro": { . , . , . },
+Declarar arraways--> "jogos" : [{ ]},
+}]
+Sempre será utilizado , ao invés do ;
+[{
+    "jogo": "R6",//Chave e o valor atríbuido
+    
+    "ubisoft": {//Um objeto com atríbutos
+        "ano": "2015",
+        "players": 20000,
+        "plataforma": "PC"},
+    "jogadores": [{//Arrays no JSON
+        "nome": "Astro",
+        "idade": 28,
+        "titular": true,
+        "time" : ["bzk","fontt","faze"]},
+        {
+            "nome": "Muringa",
+            "idade": "22",
+            "titular": true,
+            "time": ["fontt", "faze"]
+        }
+    ]    
+    
+    }]
