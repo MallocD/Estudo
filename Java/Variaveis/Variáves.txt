@@ -49,3 +49,19 @@ TIPOS
 *aritmético : +,-,*,/,%
 *atribuição:=,+=,-=,*=,/=,%=
 
+\\CASTING//
+
+casting=conversão
+
+"É a transformação de uma determinada variável de tipo menos esfecífico para um tipo mais específico e vice-versa"
+
+Tipos:
+*Upcast(Implícito)
+long I ; int i= 10; I = i;<=Implicito
+
+*Downcast(explícito)
+int i; long I= 100; i= (int)I=<Explícito
+int i; float f = 10.5f; i=(int)f;<-- Havera perda de informações
+
+
+
