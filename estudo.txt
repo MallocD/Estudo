@@ -112,6 +112,13 @@ String(n);n.toString();--> Conversão de number for String;
 
 //PROMPT DE COMANDO DO WINDWOS
 
+rmdir "Nome da pasta" /S/Q=> Apaga a pasta
+del "Nome da pasta" ==> Apaga todo conteúdo dentro de uma pasta
+echo "palavra ou frase" > "nome de um arquivo a ser criado ou já existente" ==> Adiciona a escrita a um arquivo
+echo=> Printa no terminal o que foi escrito(echo alo)
+TAB=> Auto Completamento
+mkdir=> Criar uma nova pasta
+cd ..=> Volta um caminho
 NULL- Cria novo arquivo
 DIR- Ve os arquivos dentro de um diretório
 CLS- Limpa o cmd

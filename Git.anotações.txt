@@ -1,3 +1,16 @@
+>Teoria<
+SHA1>SHA- Secure Hash Algorithm
+ssh-keygen -t ed25519 -C joao337.jvs@gmail.com => Cria uma tokken ssh
+eval $(ssh-agent -s) => Ativação da chave
+ssh-add id_ed25519=> Adicionar a chave
+
+usando o toque touch newFile.txt apenas cria.
+usando eco echo > newFile.txt apenas cria.
+usando o gato cat > newFile.txt cria e pode começar a anexar ao arquivo.
+usando o vim vim newFile.txt cria e pode começar a editar o arquivo.
+
+
+
 git init --> Criar um repositório do git;
 git add .--> Adiciona todas as mudanças;
 git add readme.md --> Um unico arquivo que foi modificado;
