@@ -1,0 +1,42 @@
+4 Tipos de váriaves =>
+
+*Intância : Objeto
+
+*Classe : classe
+
+*Local : dentro de métodos
+
+<?visibilidade?><?modificador?>'tipo''nome'<?=valorinicial?>;
+V:"public","protected" e "private"
+M: Modificador "final" => Como se fosse uma váriavel constante//final int j = 10 ou int final j= 1; 
+T: tipo de dado : String, Integer, Double e etc.
+N: Nome que é fornecido a váriavel
+V: Valor inicial, é opicional.
+
+*Paramêtro : na assinatura do método
+
+
+//////BOAS PRÁTICAS///////////
+
+*Sempre começar com letra minúscula;
+Ex: int roupa;
+
+*Nomes expressivos;
+Ex: int horas; ao invés de int h;
+
+*Notação Camelo;
+Ex: int HorasDia; ou int horasDia;
+
+*Quando constant maiúscula e separada por "_";
+Ex : final int HORAS_DIA;
+
+VÁRIAVES COM UM CARACTÉRE APENAS(int i;) PODE SER UTILIZADO EM SITUAÇÕES EM QUE A VÁRIAVEL SERÁ DESCARTADA
+
+
+////TIPOS DE DADOS///
+
+==> TIPIFICAÇÃO <==
+
+*ESTÁTICA > Forte=> Seu tipo(String,int e etc) não pode ser alterado durante a compilação vs Dinânima(fraco)==> Pode ser alterado durante seu processo
+
+*Primitivo vs Composto

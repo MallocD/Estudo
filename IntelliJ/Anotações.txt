@@ -4,6 +4,8 @@ CTRL+\ =>Comentário
 SHIFT+F6=> Refatorar nome class
 SHIFT+F12=> Deixa somente o código na tela
 CTRL+ALT+L=> Organiza o código
+CTRL+ALT+V=> Cria váriavel local
+CTRL+N=> Faz a pesquisa das classes abertas
 
 GIT====>
 CTRL+K=>Abre Commiter
