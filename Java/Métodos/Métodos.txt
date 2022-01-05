@@ -1,0 +1,56 @@
+Métodos -->
+É uma porção de código que é disponibilizado por uma classe. Este é executado quando é feita uma requisição a ele.
+São responsáveis por definir e realizar um determinado comportamento.
+
+Pradão de definição:
+
+<?visibilidade?> <?tipo?><?modificador?>retorno nome (<?parâmetros?>)<?exções?>corpo
+os que estão entre <??> São opcionais
+
+onde
+V:"public"...
+T: concreto ou abstrato
+M: "static" ou "final"
+R= tipo de dado ou "void"
+N= nome que é fornecido ao método
+P= parametro que pode receber
+E= exceções que pode lançar
+c= código que possui ou vaizo
+
+public static tipo nome (parametro) {...}
+
+Math.random()--> Classe Math, com o método random.
+Math.sqrt(4)-> Classe Math, com método sqrt e passando parametro 4
+
+Assinatura -->
+nome(parametros)
+CalcularTotalVendas(doubble precoItem1, double precoItem2){...} ou
+CalcularTotalVendas(null){...}
+
+Mensagem : é o ato de solicitar ao método que o mesmo execute. Pode ser direcionada a um objeto ou classe.
+
+Passagem de parâmetros:
+Por valor (cópia)
+Por refência(endereço)
+
+
+Esse é um exemplo de passagem por valor(cópia):
+int i= 10;
+public void fazerAlgo(int i){
+
+	i+=10;
+	System.out.println("Valor de i dentro:" + i)//Irá mostrar 20
+}
+System.out.println("Valor de i fora: " + i)//Irá mostrar 10
+
+////Boas Práticas////
+*Nomes devem seer descritivos,mas curtos
+
+*Camel case :(Uma dica é colocar um verbo no começo do nome dos métodos)
+verificarSaldo()/exibirDebito()
+
+*Deve possuir entre 80 e 120 linhas
+
+*Evite lista de parâmetros longas
+
+*Visibilidade Adequadas

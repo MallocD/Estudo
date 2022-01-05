@@ -59,6 +59,13 @@ margin : auto; --Centraliza div e section
 
 
 --<<<<<<<<Java>>>>>>>>--
+
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH");//Método para formatar horas local
+
+System.out.print("Agora são  " +(Integer.parseInt(dtf.format(LocalDateTime.now()))) + " horas, ");
+Message.obterMessage(Integer.parseInt(dtf.format(LocalDateTime.now())));
+
+
 Date data = new Date();
   SimpleDateFormat formatar = new SimpleDateFormat("y");
    String dataf = formatar.format(data);
