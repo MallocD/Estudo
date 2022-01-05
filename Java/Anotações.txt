@@ -40,3 +40,12 @@ VÁRIAVES COM UM CARACTÉRE APENAS(int i;) PODE SER UTILIZADO EM SITUAÇÕES EM 
 *ESTÁTICA > Forte=> Seu tipo(String,int e etc) não pode ser alterado durante a compilação vs Dinânima(fraco)==> Pode ser alterado durante seu processo
 
 *Primitivo vs Composto
+
+//OPERADORES ARITIMÉTICOS
+
+TIPOS
+*pós-fixado: exp++ ou exp--
+*pré-fixado:++exp ou --exp
+*aritmético : +,-,*,/,%
+*atribuição:=,+=,-=,*=,/=,%=
+
