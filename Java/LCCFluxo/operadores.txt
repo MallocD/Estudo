@@ -22,7 +22,7 @@ Disjunção exclusiva:operação que só é verdade quando ambos os operandos ou
 ^ -> xor //V V = F/ V F = V/ F V = V
 
 Negação: operação que inverte o valor lógico de um operando ou expressão
-!-> inverção // V= F/ F=V
+!-> inversão // V= F/ F=V
 
 Operadores bitwise : & e |
 Operadores shift : ~,>>,>>>,<<
@@ -71,6 +71,26 @@ case 1 -> System.out.println("Valor é 1");
 
 case 2 -> System.out.println("Valor é 2");
 }
+
+---------Blocos----------
+
+É um grupo de 0 ou mais códigos quais trabalham em conjunto pra executar uma operação"
+
+Tipos :
+Locais : dentro de métodos
+Estáticos : dentro de classes
+Instância: dentro de classes
+
+public void veriFicar(){}<--Bloco
+
+if(menordeIdade)-->Quando houver um linha de execução em um if não é obrigado abrir e fechar chaves para criação de blocos
+ return PaginaProibida
+
+if((15+10)<20)//Esta correto
+System.out.println("Verdade");
+else
+System.out.println("Mentira");
+            
 
 
 

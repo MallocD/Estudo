@@ -10,6 +10,10 @@ public class fluxos {
         numero();
         logicos.ifMenor();
 
+
+
+
+
     }
 
        private static String diaSemana() {
@@ -92,7 +96,7 @@ public class fluxos {
         switch (mes){//Maneira mais simples de programar switch
             case 1,2,12 ->System.out.println("Boas férias");
             default -> System.out.println("Bom trabalho!!");
-            /*case 1 ://Maneira tradicional
+           /* case 1 ://Maneira tradicional
             case 2 :
             case 12 :
                 System.out.println("Boas férias");
