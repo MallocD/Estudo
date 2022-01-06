@@ -1,0 +1,76 @@
+Operadores logicos tipos :
+
+Simbologia =>
+igual ==
+diferente !=
+
+Simbologia 
+Maior >
+Maior igual >=
+Menor <
+Menor igual <=
+
+Tipos operadores logicos:
+
+Conjunção: operação lógica que só é verdadeira quando ambos os operandos ou expressões envolvidas são verdade.
+&&-> and(e)/ V V = V / V F = F
+
+Disjunção: operação que só é falsa quando ambos operandos ou expressões são falsos
+||-> or(ou) / V V = V / V F = V / F F= F
+
+Disjunção exclusiva:operação que só é verdade quando ambos os operandos ou expressões são opostos
+^ -> xor //V V = F/ V F = V/ F V = V
+
+Negação: operação que inverte o valor lógico de um operando ou expressão
+!-> inverção // V= F/ F=V
+
+Operadores bitwise : & e |
+Operadores shift : ~,>>,>>>,<<
+
+
+////Boas práticas
+
+*Crie váriaveis auxiliares para guardar resultados intermediários
+
+Controle de fluxos :
+"São estrutura que tem a capacidade de direcionar o fluxo de execução do código."
+
+//Tipos :
+*Decisão : if, if-else, if-else-if, switch e operador ternário;
+*Repetição: for, while, do while;
+*Interrupção: break, continue e return;
+
+--Decisão: Estrutura que avalia uma condição booleana ou variável para direcionar o fluxo da execução
+
+*Opções : if(se), switch(escolha) e operador ternário.
+
+//Boas práticas:
+*Switch é para valores exatos e if para expressões booleanas;
+*Evitar usar o default do switch para "case genéricos"
+*Evitar o efeito "flecha dos if's;
+*Evitar muitos if's aninhados;
+*Usar a boa prática da aula 2 para dimunir o tamanho do if
+
+\\\\SWITCH ///
+Maneiras de escreve-lo :
+
+switch(dia) {//Maneira Tradicional
+
+case 1 : 
+System.out.println("Valor é 1");
+break;
+case 2 : 
+System.out.println("Valor é 2");
+break;
+}
+
+//Maneira mais simples e limpa
+switch(dia) {
+
+case 1 -> System.out.println("Valor é 1");
+
+case 2 -> System.out.println("Valor é 2");
+}
+
+
+

@@ -1,0 +1,30 @@
+Todos os métodos abaixo são sobrecargas pois foi mudado os parâmetros das assinaturas;
+
+Alterar a assinatura do método:
+Ass=nome + paramêtros
+converterParaInteiro(float f);
+converterParaInteiro(double d);
+converterParaInteiro(String s);
+converterParaInteiro(float f, RoundType rd);
+converterParaInteiro(double d, RoundType rd);
+converterParaInteiro(String s, RoundType rd);
+converterParaInteiro(RoundType rd, String s);
+
+converterParaInteiro();
+
+ex de Sobrecargas utilizadas no dia dia :
+println(a)
+printf(b)
+print(c)
+
+Importante lembrar que se houver a mesma quantidade de parametros retornados em um método, os tipos não poderam ser os mesmos
+Por exemplo:
+ calcular(float a, float b)
+ calcular(float c, float c)
+Nesse caso irá dar erro no compilador ou pode até rodar e acontecer algo inesperado
+o que deve ser feito é mudar o tipo:
+calcular(int a, int b)
+E não se esquecer de mudar no main quando chamar o método
+Calc.calcular(2.5f , 3.0f)Float
+Calc.calcular(3,5)Int
+	
