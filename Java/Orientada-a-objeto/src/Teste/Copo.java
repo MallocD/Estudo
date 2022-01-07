@@ -23,7 +23,7 @@ public class Copo {
         if (this.volume < this.capacidade) {
             System.out.println("Seu copo ainda cabe bebida,caso queira enchelo digite 1\nCaso contrário digite 2...");
             if (this.d == 1 && !tampado) {
-                this.volume += (this.capacidade - this.volume);
+                this.volume =this.capacidade;
             }
         }
     }

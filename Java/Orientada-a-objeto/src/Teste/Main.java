@@ -30,5 +30,7 @@ public class Main {
         System.out.println("------------------");
         cop.situacaoCopo();
 
+        int i[] ={1, 2, 3, 4};
+
     }
 }
