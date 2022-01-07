@@ -18,3 +18,63 @@ Reutilizável : Podemos utilizar objetos de um sistema que criamos em outro sist
 
 Natural : Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
 
+Definição de objeto :
+Coisa material ou abstrata que pode ser percebeida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual.
+
+
+Todo objeto vem de uma classe(Um Molde/Modelo):
+
+Classe = Modelo que será destinado para criação ou não de objetos
+Atributos = Caractrísticas do objeto instanciado
+Métodos = Comportamentos que o objeto pode realizar
+Estado =  Estado atual do objeto
+
+Pessoa = Classe
+Cor da pele = Atributo
+Joao = Objeto
+vouCaminhar = Método
+Cor da pele = branco = Estado.
+
+
+
+Coisas que eu tenho -> Características -> Atributos
+
+Modelo
+Cor
+Ponta
+Carga
+Tampada
+
+Coisas que eu faço - > Comportamentos - > Métodos
+
+Escrever
+Rabiscar
+Tampar
+Pintar
+Destampar
+
+
+Como estou agora-> Estado atual -> Estado
+
+Destampada
+Carga 90
+Cor azul
+ponta 07
+
+Quando gero um objeto a partir de uma classe = Instanciamento
+
+
+c1 = nova Caneta=> Caneta c1 = new Caneta();//Nesse caso gerei o objeto c1 a partir da classe Caneta;
+c1.cor = "Azul" //Mudando o valor do atributo a partir do obejto gerado pelo instanciamento//Atributo
+c1.ponta = "2" // Atributo
+c1.rabiscar() //Chamando o método a partir do objeto gerado.//Chamada de objeto
+
+
+Classes e Objetos são quase irmãs
+
+Classe => Define atributos e métodos comuns que serão compartilhados por um objeto.
+
+Abstração = > Abistrair alguns atributos que não seram úteis ao objeto na programação
+
+
+
