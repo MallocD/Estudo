@@ -1,0 +1,11 @@
+As estruturas de repetição podem ser classificadas em : 
+* Repetição com teste no ínicio(While)
+* Repetição com teste no final(do-while)
+* Repetição contada(for)
+--Comando break é utilizado pra terminar de forma abrupta uma repetição
+--Quando o comando continue é executado, os comandos restantes da repetição são ignorados
+e programa volta a testar novamente ou não;
+
+
+!(l.equalsIgnoreCase("a")|//Chamdando o método equalsIgnoreCase do objeto String
+//equals= Igual//Ignore =Ignorar //Case= Maiusculo ou minusculo //Ira comparar o valor das duas Strings ignorando o case sensitive
