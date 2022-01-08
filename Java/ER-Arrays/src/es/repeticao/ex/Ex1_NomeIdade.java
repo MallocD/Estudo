@@ -1,4 +1,4 @@
-package exercicios.dio;
+package es.repeticao.ex;
 
 import java.sql.SQLOutput;
 import java.util.Objects;

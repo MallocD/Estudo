@@ -1,4 +1,4 @@
-package exercicios.dio;
+package es.repeticao.ex;
 
 
 
