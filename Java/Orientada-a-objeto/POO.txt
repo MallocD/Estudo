@@ -77,4 +77,26 @@ Classe => Define atributos e métodos comuns que serão compartilhados por um ob
 Abstração = > Abistrair alguns atributos que não seram úteis ao objeto na programação
 
 
+Linguagem de Modelagem Unificada => UML
+
+Diagrama de classes :
+Toda classe será representada como um retangulo
+*Cabeçalho: Nome da classe
+*Miolho : Atributos(Ex: cor)
+*Rodapé : Métodos (Ex: pintar())
+
+Modificadores de visibilidade
+
+*Indicam o nível de acesso aos componentes internos de uma classe :
+
+// + público ou public // Qualquer um pode utilizar(orelhão)
+: A classe atual e todas as outras classes teram acesso.
+
+// - privado ou private // Somente uma pessoa pode utilizar(seu celular)
+: somente a classe atual terá acesso
+
+// # protegido ou protected // Só quem é da família(Telefone da minha casa)
+:a classe atual e todas as suas sub-classes
+
+
 
