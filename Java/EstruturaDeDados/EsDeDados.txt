@@ -1,0 +1,61 @@
+As váriaveis são salvas em bits
+
+Memória RAM(Primária) : Só armazena dados e váriaveis na presença de energia;
+
+*Possuem diversos chips que direcionam para as memórias e armazenar informações;
+
+Memória Secundária(HD,SSD) : Armazena dados mesmo sem energia;
+
+1 Byte = 8 bits;
+
+Atribuição e referência 
+
+* As atribuições em Java são por cópia de valor sempre;
+
+*Com tipo primitivo, copiamos o valor em memória;
+
+*Com objetos copiamos o valor da referência em memória sem duplicar o objeto;
+
+Generics :
+
+Unknow Wildcard 
+
+public void imprimeLista(List<?>lista){//Pode receber qualquer tipo de Lista
+	for(Object obj : lista){
+	System.out.println(obj);
+	}
+  }
+List<Aluno> minhaLista = new List<Aluno>();
+imprimeLista(minhaLista)
+
+------------------------------
+UpperBounded Wildcard
+
+public void imprimeLista(List<? extends Pessoa> listaPessoa){//Só é possível passar listaPessoas e herdeiros
+	for(Pessoa p : listaPessoas){
+	System.out.println(p);
+	}
+ }
+
+List<Aluno> minhaLista = new List<Aluno>();
+imprimeLista(minhaLista)
+
+------------------------------------
+LowerBounded Wildcard
+
+public void imprimeLista(Lis<? super Pessoa> listaPessoas){//Só é possível passar de listaPessoas para cima
+	for(Pessoas p : listaPessoas){
+	System.out.println(p);
+	}
+}
+List<Aluno> minhaLista= new List<Aluno>();
+imprimeLista(minhaLista);
+
+-----------
+Convenção
+
+*K para "Key", exemplo : Map<K,V>
+*V para "Value", exemplo : Map<K,V>
+*E para "Elemente", exemplo : List<E>
+*T para " Type", exemplo : Collections#addAll
+*? quando genérico

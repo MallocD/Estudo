@@ -98,5 +98,7 @@ Modificadores de visibilidade
 // # protegido ou protected // Só quem é da família(Telefone da minha casa)
 :a classe atual e todas as suas sub-classes
 
+Um exemplo, você vai ao mercado(public classe) na hora de pagar tem que dar o dinheiro para o atendente(public metodo), você não tem acesso ao caixa
+(private atributo) só o atendente pois ele é do mercado(classe public)
 
 

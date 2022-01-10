@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Ex2_Consoantes {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);//instancia um novo objeto a partir da classe Scanner
 
         String[] cons = new String[6];//Instanciando um objeto array a partir de uma classe
         int quanT = 0;
         int c = 0;
 
         do{
-            System.out.println("Leta : ");
+            System.out.println("Letra : ");
             String l = scan.next();
 
             if ( !(l.equalsIgnoreCase("a")|//Chamdando o método equalsIgnoreCase do objeto String//equals= Igual//Ignore =Ignorar //Case= Maiusculo ou minusculo //Ira comparar o valor das duas Strings ignorando o case sensitive

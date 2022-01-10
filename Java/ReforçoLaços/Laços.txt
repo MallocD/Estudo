@@ -1,0 +1,125 @@
+Tipos :
+for : Conjunto finitos
+while : Condição permite
+
+
+////////////////For///////////////
+
+Estrutura básica do for : 
+	 for(ínicio;fim;incremento){
+	código;
+	}
+onde : 
+-ínicio : expressão que indica o ponto de incicio
+-fim : expressão que indica quando parar
+-incremento : expressão que faz o "for caminhar"
+
+For each :
+
+for (<TipoDeDado> variável : itens(array){
+//códigos;
+}
+
+int[] idades = new int[] {12,35,45,22,23}
+for(int idade : idades){
+//códgigo
+}
+for(int i = 0; i<idades.lenght; i++){//Forma mais complicada e maior
+int idade = idades[i];
+//códigos
+}
+
+For com iterator:
+Um Iterator é um objeto que pode ser usado para percorrer coleções, 
+como ArrayList e HashSet. É chamado de "iterador" porque "iteração" é o termo técnico para loop.
+
+for(Iterator<TipoDeDado> <nomeVáriavel> = itens.iterator(); itens.hasNext();){
+//códigos;
+}
+
+For com loop infinito : 
+
+for(;;){
+//código;
+}
+
+/////////////while//////////////
+
+Estrutura básica do while :
+
+while(expressão){
+//códigos;
+}
+
+////Interruptores
+
+São comandos que têm a capacidade de modificar o fluxo de execução de loops ou métodos;
+
+opções:
+*Break;//Pertence sempre ao for,while e switch;
+Interrompe a execução for,while e switch//Pode ser usada marcada e não marcada
+
+
+Não marcada(unlabeled):
+
+for(...;...;...){//O código sera jogado para esse for de fora pois o break pertence ao for de dentro
+ for(...;...;...){
+  ...
+   if (...){
+    break;
+   }
+   ...
+ }
+
+Marcada(labeled) :
+
+out:// Após o comando da execução marcada de break out; o código ira continuar após a proxima linha depois do out :
+for(...;...;...){
+ for(...;...;...){
+  ...
+   if (...){
+    break out;
+   }
+   ...
+ }
+}
+//continua aqui
+
+/////
+*Continue;
+
+Interrompe parcialmente a execução do for, while;
+
+Não marcada(unlabeled):
+
+for(...;...;...){
+ for(...;...;...){
+  ...
+   if (...){
+    continue;//O comando irá fazer com que pule a interação feita caso a condição seja verdadeira e repetira;
+   }
+   ...
+ }
+}
+
+Marcada(labeled):
+
+out://O comando irá fazer com que pule a interação feita e a próxma caso a condição seja verdadeira;
+for(...;...;...){
+ for(...;...;...){
+  ...
+   if (...){
+    continue out;
+   }
+   ...
+ }
+}
+
+
+*Return;
+-Interrompe a execução de um método, pode ser utilizado tambem em for,whhile;
+-Pode ser utilizado com ou sem valor;
+
+///////Matrizes
+
+int [][][] m = new int [3][3][3];
