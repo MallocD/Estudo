@@ -101,4 +101,49 @@ Modificadores de visibilidade
 Um exemplo, você vai ao mercado(public classe) na hora de pagar tem que dar o dinheiro para o atendente(public metodo), você não tem acesso ao caixa
 (private atributo) só o atendente pois ele é do mercado(classe public)
 
+------------------------------
+Métodos Especiais
+
+Metódos Acessores :
+
+////
+Getters
+
+Criação de uma classe Estante
+
+Estante e = new Estante();//Instanciamento da classe tornando a em um objeto
+
+t= e.totDoc;// A variável irá receber o valor do atributo do objeto e;
+
+
+
+t = e.getTotDoc(); //A Váriavel t está recendo  a chamada do objeto ao metódo getTotDoc()
+
+Métodos Modificadores :
+
+////
+Setters
+
+Estante e = new Estante();//Instanciamento da classe tornando a em um objeto
+
+e.totDoc = e.totDoc + 1;// Atributo totDoc irá receber mais um
+
+e.setTotDoc(doc); //Normalmente é necessário o parâmetro que será setado ao método
+
+
+Método Construtor :
+
+////
+Construct
+
+Os valores de atributos e métodos são setados automaticamentes
+Metodo construtor(m: caractére,c: caractére, p: Real){
+setModel(m)
+setCor(c)
+setPonta(p)
+}
+Caneta c1 = new Caneta("Bic","Preta", "0.7")//Setar valores aos atributos do objeto no momento de sua criação, passando os parâmetros e utilando o Método contrutor;
+
+
+
 
