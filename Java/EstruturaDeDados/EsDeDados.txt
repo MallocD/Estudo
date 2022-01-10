@@ -59,3 +59,18 @@ Convenção
 *E para "Elemente", exemplo : List<E>
 *T para " Type", exemplo : Collections#addAll
 *? quando genérico
+
+---------
+Pilha
+
+Top : Verifica o valor do nó que esta no topo
+Push : Adiciona um novo valor a PILHA
+POP: Remove um elemento da pilha assim passando um novo valor a referência de nós
+
+Método isEmpty
+
+public boolean isEmpty(){//Irá verificar se o valor do nó/refêrencia é null, se for é pq não é uma pilha
+	if(refNo==null){
+	  return true;
+	}
+}
