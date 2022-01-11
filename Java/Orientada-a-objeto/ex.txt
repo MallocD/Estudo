@@ -1,0 +1,21 @@
++numConta
+#tipo
+-dono
+-saldo
+-status
+
++abrir
++fechar
++depositar
++sacar
++pagarMensal
+
+construtor(conta fechada e saldo 0)
+
+
+tipo caracter > cc ou cp
+abrir conta = boolean se cc = 100 se cp= 150
+fecharConta = não pode ter dinheiro dentro e não deve estar devendo
+depositar = abrir conta = true
+sacar = abrir conta = true && dinheiro na conta = true
+pagarMensal = cc = 12 / cp = 20

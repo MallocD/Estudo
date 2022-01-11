@@ -54,3 +54,8 @@ git diff ->Verifica oq foi alterado
 .gitignore//
 echo "nomedoarquivo" >> .gitignore --> Adicionar nome do arquivo ao .gitignore // Ou pode ser feito diretamente abrindo o editor de texto
 cat .gitingore --> Ver os arquivos dentro do .gitignore
+
+i   - start editing
+ESC - get back to normal mode
+:w  - save 
+:q  - quit
