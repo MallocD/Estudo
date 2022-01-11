@@ -74,3 +74,14 @@ public boolean isEmpty(){//Irá verificar se o valor do nó/refêrencia é null,
 	  return true;
 	}
 }
+------------
+Filas(FIFOS : First in, First Out)
+
+O primeiro elemento que entra é o primeiro que sai
+
+Métodos :
+.enqueue();//Enfilerar
+.dequeue();//Desenfilerar
+.isEmpty
+
+
