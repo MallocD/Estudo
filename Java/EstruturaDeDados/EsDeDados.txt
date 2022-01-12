@@ -98,4 +98,17 @@ isEmpty();
 get();
 //Irá a referencia de qualquer nó
 
+----------------------
+Lista duplamente encadeada :
+
+Métodos :
+.add(el)
+
+.add(index,el)
+
+.remove(index)
+
+.get(index)
+
+
 

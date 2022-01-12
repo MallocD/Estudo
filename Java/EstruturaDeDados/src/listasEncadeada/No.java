@@ -13,9 +13,11 @@ public class No<T> {
         this.proxNo = proxNo;
         this.conteudo = conteudo;
     }
+
     public void setConteudo(T conteudo){
         this.conteudo = conteudo;
     }
+
     public T getConteudo(){
         return conteudo;
     }
@@ -23,6 +25,7 @@ public class No<T> {
     public void setProxNo(No proxNo){
         this.proxNo = proxNo;
     }
+
     public No getProxNo(){
         return proxNo;
     }
