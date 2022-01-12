@@ -2,7 +2,7 @@ package filas;
 
 public class No {
 
-    private Object object;
+    private Object object;//Váriavel do tipo object
     private No noRef;
 
     public No(){

@@ -11,5 +11,10 @@ public class Main {
         minhaFila.enqueue(new No("sexto"));
 
         System.out.println(minhaFila);
+        System.out.println(minhaFila.dequeue());
+        System.out.println(minhaFila.first());
+        System.out.println(minhaFila);
+        minhaFila.enqueue(new No("Ultimo"));
+        System.out.println(minhaFila);
     }
 }

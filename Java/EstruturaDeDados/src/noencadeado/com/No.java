@@ -2,7 +2,7 @@ package noencadeado.com;
 
 public class No<T> {//Tipo genérico que pode ser de qualquer tipo <T>
 
-    private T conteudo;
+    private T conteudo;//Variável do tipo generic
     private No<T> proximoNo;
 
     public No(T conteudo) {

@@ -19,12 +19,14 @@ public class Fila {
             while (true){
                 if(primeiroNo.getNoRef()!=null){
                     primeiroNo = primeiroNo.getNoRef();
-                }else break;
+                }else {
+                    break;}
 
-            }
+            } return primeiroNo;
         }return null;
 
     }
+
     public No dequeue(){
         if(!isEmpty()){
             No primeiroNo = refNoEntrada;
@@ -37,11 +39,18 @@ public class Fila {
                     noAuxiliar.setNoRef(null);
                     break;
                 }
-            }return primeiroNo;
-        }return null;
+            }
+            return primeiroNo;
+        }
+        return null;
 
     }
 
+
+
+    public boolean isEmpty(){
+        return refNoEntrada ==null? true : false;
+    }
     @Override
     public String toString(){
         String stringRetorno= "";
@@ -52,16 +61,11 @@ public class Fila {
                 if(noAuxiliar.getNoRef()!=null){
                 noAuxiliar = noAuxiliar.getNoRef();
                 }else {
-                    stringRetorno = "Nul" ;
+                    stringRetorno += "Null" ;
                     break;}
             }
         }else{
             stringRetorno = "null";}
         return stringRetorno;
-    }
-
-
-    public boolean isEmpty(){
-        return refNoEntrada ==null? true : false;
     }
 }
