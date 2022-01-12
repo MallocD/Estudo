@@ -1,19 +1,21 @@
 package filas;
 
-public class Fila {
+public class Fila<T> {//Utilizando o generics de qualquer tipo
 
-    private No refNoEntrada;
+    private No<T> refNoEntrada;
 
     public Fila(){
         this.refNoEntrada = null;
     }
 
-    public void enqueue(No novoNo){
+    public void enqueue(T object){
+
+        No novoNo = new No(object);//Instanciamento da classe No como objeto
         novoNo.setNoRef(refNoEntrada);
         refNoEntrada = novoNo;
     }
 
-    public No first(){
+    public T first(){
         if(!isEmpty()){
             No primeiroNo = refNoEntrada;
             while (true){
@@ -22,12 +24,12 @@ public class Fila {
                 }else {
                     break;}
 
-            } return primeiroNo;
+            } return (T) primeiroNo.getObject();
         }return null;
 
     }
 
-    public No dequeue(){
+    public T dequeue(){
         if(!isEmpty()){
             No primeiroNo = refNoEntrada;
             No noAuxiliar = refNoEntrada;
@@ -40,18 +42,17 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
 
     }
 
-
-
     public boolean isEmpty(){
         return refNoEntrada ==null? true : false;
     }
     @Override
+
     public String toString(){
         String stringRetorno= "";
         No noAuxiliar = refNoEntrada;
@@ -65,7 +66,8 @@ public class Fila {
                     break;}
             }
         }else{
-            stringRetorno = "null";}
+            stringRetorno += "null";}
         return stringRetorno;
     }
 }
+

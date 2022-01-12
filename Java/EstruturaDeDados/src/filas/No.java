@@ -1,14 +1,14 @@
 package filas;
 
-public class No {
+public class No<T> {//Utilizando o generics de qualquer tipo
 
-    private Object object;//Váriavel do tipo object
-    private No noRef;
+    private T object;//Váriavel do tipo object
+    private No<T> noRef;
 
     public No(){
 
     }
-    public No(Object object) {
+    public No(T object) {
         this.noRef = null;
         this.object = object;
     }
@@ -17,7 +17,7 @@ public class No {
         return object;
     }
 
-    public void setObject(Object object) {
+    public void setObject(T object) {
         this.object = object;
     }
 
@@ -25,7 +25,7 @@ public class No {
         return noRef;
     }
 
-    public void setNoRef(No noRef) {
+    public void setNoRef(No<T> noRef) {
         this.noRef = noRef;
     }
 

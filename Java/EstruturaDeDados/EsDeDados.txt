@@ -83,5 +83,19 @@ Métodos :
 .enqueue();//Enfilerar
 .dequeue();//Desenfilerar
 .isEmpty
+----------------------
+Listas Encadeadas :
+Métodos:
+
+add();
+//Há à possibilidade de adicionar elementos em qualquer ponto do nó
+
+remove();
+Há à possibilidade de remover qualquer  nó
+
+isEmpty();
+
+get();
+//Irá a referencia de qualquer nó
 
 
