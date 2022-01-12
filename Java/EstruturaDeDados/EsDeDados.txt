@@ -110,5 +110,13 @@ Métodos :
 
 .get(index)
 
+-------------
+Lista circular:
+A principal diferença para o duplamente encadeado é que não aponta para si mesmo e que o ultimo aponta para o primeiro
+assim o transformando em uma lista circular;E haverá uma ref de entranda
+
+
+
+
 
 

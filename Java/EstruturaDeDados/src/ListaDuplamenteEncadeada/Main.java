@@ -17,5 +17,6 @@ public class Main {
         System.out.println("Indíces: " + lista.size());
         lista.remove(3);
         System.out.println("Indíces: " + lista.size());
+        System.out.println("Contéudo: "+ lista.get(4));
     }
 }
