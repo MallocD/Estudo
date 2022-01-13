@@ -1,0 +1,27 @@
+package debugar;
+
+import java.util.Scanner;
+
+public class CalcularMedia {
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+            String[] alunos = {"Camila", "Lucas", "Bruna", "Pedro"};
+
+           double media = calculaMediaDaTurma(alunos, scan);
+
+            System.out.printf("Média da turma %.2f", media);
+        }
+
+        public static double calculaMediaDaTurma(String[] alunos, Scanner scan) {
+
+            int soma = 0;
+            for(String aluno : alunos) {
+                System.out.printf("Nota do aluno %s: ", aluno);
+                double nota = scan.nextDouble();
+                soma += nota;
+            }
+
+            return soma / alunos.length;
+        }
+
+    }
