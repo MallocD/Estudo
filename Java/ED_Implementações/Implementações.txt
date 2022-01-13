@@ -1,0 +1,6 @@
+Stack<Tipo>nome = new Stack<>() => Implementação da classe Stack, Pilhas
+Queue<Tipo>nome = new linkedList<>()   => Implementação da clase Queue LinkedList, Filas
+List<Tipo>nome = new ArrayList<>()   => Implementação da clase list ArrayList, Listas de array
+Set<Tipo>nome = new HashSet<>()   => Implementação da classe set HashSet, Seta de forma aleatória os valores adicionados
+Set<Tipo>nome = new TreeSet<>()   => Implementação da clase set TreeSet, Seta de forma como arvore Herárquica junto com o toCompare implementando na classe desejada
+Map<Tipo>nome = new HashMap<>()   => Implemento da classe Map e HashMap, Comporta-se de forma como um Construtor, Pode ser implementada dentro do ListArray sendo passado como um tipo
