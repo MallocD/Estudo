@@ -1,0 +1,15 @@
+Exceção é um evento que interrompe o fluxo normal do processamento de uma classe
+--O uso correto de exceções torna o programa mais robusto e confiável
+--Com o tratamento de exceções, um programa pode continuar executando depois de lidar com um problema;
+
+*Erro : Usado pela JVM que serve para indicar se existe algum problema de recurso do programa, tornando a execução impossível  de continuar
+
+*Unchecked(Runtime): Exceptions que PODEM ser evitados se forem tratados e analisados pelo desenvolvedor. Erros de lógica
+
+*Checked Exception : Excptions que DEVEM ser evitados e tratados pelo desenvolvedor para o programa funcionar.
+
+try, catch , finally : Cada uma dessas palavra, juntas, definem blocos para o tratamento de exceções.
+
+throws : Declara que um método pode lançar uma ou várias exceções
+
+throw: Lança explicitamente uma exception
