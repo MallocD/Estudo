@@ -1,0 +1,44 @@
+Estruturas de dados bidimensional
+-Não linear
+-Constituida de nós que representam um modelo hierárquico
+*Armazena os dados com base em relações de dependencias;
+-Listas pilhas e filas são estruturas lineares
+
+Utilização
+-Sistema de arquivos
+-Banco de dados
+-Interface graficas
+-Paginas Web
+
+Características de uma Árvore herárquica
+
+-Nó
+-Raiz
+-Pai e filho
+-Irmão
+-Nível de um nó
+-Altura ou profundidade
+-Folha ou nó terminal
+-Nó interno
+-Grau de um nó
+-Subárvore
+
+Tipos de Árvores
+
+-Árvore Binária
+Posição de nós
+-Maiores a direita e menores a esquerda
+-Árvore AVL
+-Árvore Ordenada
+-Árvore Rubro-Negra
+-
+Exclusão
+Pega o maior elemento da esquerda
+
+Atravessamentos 
+
+IN-ORDEM :
+Exibe em ordem crescente
+
+PRÉ-ORDEM: Exibe de forma diagnoal e depois ordena
+PÓS-ORDEM: Organiza e depois exibe
