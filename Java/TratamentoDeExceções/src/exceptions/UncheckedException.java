@@ -22,7 +22,7 @@ public class UncheckedException {
             } catch (ArithmeticException e) {//NumberFormatException  Está tratando a exceção numérica do Valor aritmético
                 e.printStackTrace();//Mostra a StackTrace
                 JOptionPane.showMessageDialog(null, "Impossível dividir por 0");
-            } finally {
+            } finally {//Independente se houve exception o finally ira rodar
                 System.out.println("Ola");
             }
         }

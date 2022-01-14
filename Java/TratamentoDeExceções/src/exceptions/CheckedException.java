@@ -11,7 +11,7 @@ public class CheckedException {
 
         try {
             imprimirConsole(nomeArqui);
-        }catch (FileNotFoundException a){//Se o arquivo não for encontrado retorna uma exception assim a gente resolve com o FileNotFoundException
+        }catch (FileNotFoundException a){//Se o nome do arquivo não for encontrado retorna uma exception assim a gente resolve com o FileNotFoundException
            JOptionPane.showMessageDialog(null,"Digite o nome do arquivo desejado corretamente");
         }
         catch (IOException e) {//Engloba mais possibilidades de erros pois é mãe de FileNotFoundException
