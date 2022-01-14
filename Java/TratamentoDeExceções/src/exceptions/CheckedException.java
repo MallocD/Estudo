@@ -17,9 +17,9 @@ public class CheckedException {
         catch (IOException e) {//Engloba mais possibilidades de erros pois é mãe de FileNotFoundException
             JOptionPane.showMessageDialog(null, "Ocorreu um erro inesperado, entre em contato com o suporte!!");
         }finally {
-            System.out.println("Ola");
-        }
+
         System.out.println("Apesar de exception ou não o programa continua");
+        }
 
 
     }

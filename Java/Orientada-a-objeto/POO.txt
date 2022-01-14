@@ -144,6 +144,9 @@ setPonta(p)
 }
 Caneta c1 = new Caneta("Bic","Preta", "0.7")//Setar valores aos atributos do objeto no momento de sua criação, passando os parâmetros e utilando o Método contrutor;
 
+//Encapsulamento : 
+Abstract quando o código é desenvolvido em outra classse
+
 
 
 
