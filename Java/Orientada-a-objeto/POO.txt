@@ -136,6 +136,8 @@ Método Construtor :
 ////
 Construct
 
+
+
 Os valores de atributos e métodos são setados automaticamentes
 Metodo construtor(m: caractére,c: caractére, p: Real){
 setModel(m)
@@ -146,6 +148,8 @@ Caneta c1 = new Caneta("Bic","Preta", "0.7")//Setar valores aos atributos do obj
 
 //Encapsulamento : 
 Abstract quando o código é desenvolvido em outra classse
+
+//Agregação : Um objeto tem outro objeto dentro
 
 
 
