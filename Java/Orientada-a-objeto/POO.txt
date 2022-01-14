@@ -146,11 +146,37 @@ setPonta(p)
 }
 Caneta c1 = new Caneta("Bic","Preta", "0.7")//Setar valores aos atributos do objeto no momento de sua criação, passando os parâmetros e utilando o Método contrutor;
 
+EHP : Encapsulamento, Herança, polimorfimo;
 //Encapsulamento : 
 Abstract quando o código é desenvolvido em outra classse
 
 //Agregação : Um objeto tem outro objeto dentro
 
+//Herança : Herda outra classe
+SuperClasse : Mãe
+subClasse : Filha
+Toda subClasse herda os atributos e etc da SuperClasse
+Ancestral é a de cima pra baixo somente as netas
+Descendente é de baixo pra cima somente as voz
+
+Herança para implementação/Herança pobre de uma classe abstrata
+Herença para diferença: Muda algum atributo ou método da classe herdada
+
+Especialização: De cima para baixo
+Generalização : De baixo pra cima
+
+Clase Abstrata :
+Não pode ser instanciada.//Não pode criar objeto
+Só pode servir como Raiz/mae/progenitora
+
+Método Abstrato:
+Declarado, mas não implementado na progenitoria;
+
+Classe final: 
+Não pode ser herdado por outra classe;
+
+Método final:
+Não pode ser sobscrito pelas suas suaas subClasses, obrigatoriamente herdado.
 
 
 
