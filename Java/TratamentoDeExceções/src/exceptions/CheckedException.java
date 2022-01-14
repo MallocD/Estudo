@@ -4,8 +4,11 @@ import javax.swing.*;
 import java.io.*;
 
 public class CheckedException {
-    public static void main(String[] args) {//Tratar uma IOException,(Como é a classe mãe só é necessário ela)
+    public static void main(String[] args) {
         String nomeArqui = "Exceçõe.txt";
+
+
+
         try {
             imprimirConsole(nomeArqui);
         }catch (FileNotFoundException a){//Se o arquivo não for encontrado retorna uma exception assim a gente resolve com o FileNotFoundException
@@ -17,21 +20,23 @@ public class CheckedException {
             System.out.println("Ola");
         }
         System.out.println("Apesar de exception ou não o programa continua");
+
+
     }
 
-    public static void imprimirConsole(String nomeArqui) throws IOException{//Tratar uma IOException,(Como é a classe mãe só é necessário ela)
-        File file = new File(nomeArqui);
+    public static void imprimirConsole(String nomeDoArquivo) throws IOException {
+        File file = new File(nomeDoArquivo);
 
         BufferedReader br = new BufferedReader(new FileReader(file.getName()));
         String line = br.readLine();
 
-        BufferedWriter bw= new BufferedWriter(new OutputStreamWriter(System.out));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         do{
             bw.write(line);
             bw.newLine();
             line=br.readLine();
-        }while (line != null);
+        } while(line != null);
         bw.flush();
         br.close();
     }
