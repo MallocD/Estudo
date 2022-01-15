@@ -180,3 +180,15 @@ Não pode ser sobscrito pelas suas suaas subClasses, obrigatoriamente herdado.
 
 
 
+/////Polimorfismo: 
+Muitas formas de se aplicar uma coisa
+
+Permite que trate metodos com mesmo nome de forma diferente// po meio da assinatura;
+Polimorfismo de sobreposição:
+Acontece quando substituimos um método de uma SuperClasse na sua subClasse, usando a mesma assinatura;
+
+Poliformismo por sobrecargas:
+Na mesma classe, com o mesmo nome do método, mudando somente a quantidade de parametros passados e o tipo do parametro, então depende da assinatura
+
+
+
