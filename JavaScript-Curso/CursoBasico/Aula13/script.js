@@ -1,7 +1,7 @@
 //Utilizando Array
 var time= []
-time[0] = new Date()
-time[1] =time[0].getHours()
+//time[0] = new Date()
+time[1] =[0].getHours()
 time[2] = time[0].getMinutes()
 
 var res = document.getElementById("hora")
@@ -49,4 +49,4 @@ if(hora<6){
 } else {
     res.innerHTML= `<p><strong>Boa Noite</strong> agora são ${hora}:${min} da noite </p>`
     im.src= 'noite.png'
-   document.body.style.background= '#252f50'}
+   document.body.style.background= '#252f50'*/

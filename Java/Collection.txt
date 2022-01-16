@@ -1,0 +1,49 @@
+*Collection é um objeto que agrupa múltiplos elementos(váriaveis primitivas ou objetos) dentro de uma unica unidade
+
+*Serve para armazenar e processar conjuntos de dados de forma eficiente
+
+Composição Collections:
+
+*Interfaces : É um contrato que quandos assumido por uma classe deve ser implementado
+
+Hierarquia Collections:
+
+		 				<<interface>>
+	          				  Collection
+
+
+    <<interface>>       		        <<interface>>   	 		      <<interface>>
+         Set                   	                     List            		                  Queue
+  
+(*HashSet,*LinkedHashSet)                  (*ArrayList,*Vector,*LinkedList)             (*LinkedList,*PriorityQueue)  
+      (TreeSet)
+
+
+
+    <<interface>>
+         Map
+
+
+
+ (*HashTable,*HashMap)
+ HashMap->LinkedHashMap
+
+List:
+java.util.List->
+
+*Permite elementos duplicados e garante a ordem em que foi inserido
+
+LinkedList->: Por baixos do pano utiliza a lista duplamente ligada
+
+Implementação de ArrayList e LinkedList:
+--Array deve ser usado onde mais operações de pesquisa são necessários, e LinkedList deve ser usado onde mais operações 
+de inserção e exclusão são utilizados
+
+Set:
+java.util.Set->
+*Não permite elementos duplicados
+*Não possui índice
+
+Map:
+java.util.Map
+*Elementos únicos (key) para cada valor(value)
