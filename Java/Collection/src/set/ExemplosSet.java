@@ -10,6 +10,8 @@ public class ExemplosSet {
         System.out.println(notas.contains(10d));
         System.out.println("Exibir menor nota: " + Collections.min(notas));//Verificar a menor nota utilizando o Objeto da classe Collections
 
+        Set<Double> notas1 = new TreeSet<>(notas);
+        System.out.println(notas1);
         System.out.println("Exibir menor nota: " + Collections.max(notas));//Verificar a maior nota utilizando o Objeto da classe Collections
     }
 }
