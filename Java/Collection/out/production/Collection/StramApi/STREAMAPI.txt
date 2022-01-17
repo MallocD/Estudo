@@ -1,0 +1,30 @@
+1-Classe Anônima
+A classe anônima em Java é uma classe que não recebeu um nome e é tanto declarada e instanciado em uma única instrução. Você deve considerar o uso
+de uma classe anônima sempre que você precisa para criar uma classe que será instanciado apenas uma vez.
+Declarar em um argumento dentro de um método sem precisar criar a classe antes.
+
+2- Functional Interface:
+Qualquer interface com uma SAM(Single Abstract Method) é uma interface funcional e sua implementação pode ser tratada como expressões lambda.
+//Quando possui apenas um método abstrato(deve ser implementado em outra classe)
+
+*Comparator
+*Consumer
+*Function
+*Predicate
+
+3-Lambda: 
+Uma função lambda é uma função sem declaração, isto é, não é necessário colocar um nome, um tipo de retorno e o modificador de acesso.
+A idéia é que o método seja declarado no mesmo lugar em que será usado. As funções lambda em Java tem a sintaxe definida como (argumento)->(corpo).
+
+4- Referência Method
+
+Method Reference é um novo recurso do Java 8 que permite fazer referência a um método ou contrutor de uma classe ( de forma funcional) e assim indicar
+que ele deve ser usado em um ponto específico do código, deixando o mais simples e legível. Para utilizá-lo, basta informar uma classe ou referência seguida do símbolo "::" 
+e o nome do método sem os parênteses no final.
+
+5-Stream API:
+A Streams API traz una nova opção para a manipulação de coleções em Java seguindo os príncipios da programação funcional. Combinada com as expressões lambda
+ela proporciona uma forma diferente de lidar com conjuntos de elementos, oferecendo ao desenvolvedor uma maneira simples e concisa de escrever código que resulta
+em facilidade de manutenção e paralelização sem efeitos indesejados em tempo de execução.
+
+.map()-> Converter cada elemento recebido em um outro objeto, de acordo com a função passada
