@@ -1,0 +1,5 @@
+Asserts ->
+*Afirmação
+*Assertions para tipos primitivos, Objetos e arrays
+*import static
+*Ordem dos parâmetros
