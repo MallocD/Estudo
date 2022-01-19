@@ -24,6 +24,63 @@ será executado primeiro, qual classe será executada primeiro e etc.
 -> Define nossos objetos em uma configuração (xml) em tempo de execução, valores e comportamentos e de bens e passa para o Spring
 
 
+\\\\\\Spring Bean/////
+ 
+*É qualquer classe que é gerenciada pelo Ioc(Controller)
+
+Steryotypes : 
+Anotações Spring Bean
+
+@Repository : Direto com o banco de dados só pode ser usado em classes/Persistência;
+
+@Service: Regras de negócios em classes, parte pesada do programa, parte lógica
+
+@Controller: Controla quem chama alguma coisa e de que maneira será aplicado
+/@RestController: Retorna dados em JSON 
+
+@Configuration: Configuração básica de uma bean
+
+@Component: Simples sem nem um quisito
+
+\\\\\Spring Scopes///////
+@Bean
+@Scope("Singleton")
+*Singleton : Passa o mesmo valor para todas as instancias feitas a partir da classe
+
+*Prototype: Irá passar um valor para cada instancia, independentes.
+@Scope("Prototype")
+
+*Request: Toda vez que o valor for retornado ao usuário a instancia vai ser destruída, assim se perdendo na memória e gerando uma nova instancia
+@RequestScope
+
+*Session : Quase igual ao Request, porém ao contrário dele, ao invés do valor ser distrúido e gerado quando houvesse um refresh, o valor será distruido somente
+após o usuário fechar a página
+@SessionScope
+
+*Application : Igual ao Session, porém distribuida para diversas aplicações
+@Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
+
+*WeSocket: Como o request, porém sem que precise haver um refresh, atualiza e destroi uma instancia automaticamente
+@Scope(value = "websocket", proxyMode = ScopedProxyMode.TARGET_CLASS)
+
+
+\\Injenção de dependencia//
+É uma forma de aplicar inversão de controle em uma classe que utiliza funcionalidades de outras classes.
+
+Proxies e Setter
+
+Autowired
+
+*Propriedades : é a injeção direta de dependencias
+*Construtor: Preferível para realizar testes de software, pelo fato de passar o contrutor e injetar a dependencia
+*Métodos: Colocar mais regras de negócio, passar mais códigos dentro do métodos, mais executáveis 
+
+\\Suporte a CDI//
+
+O CDI é a especificação Java que define a injeção de depêndencia a inversão de controle para aplicações JavaEE.
+@Named
+
+Spring deve ser criado com o maven, porém é com mais passos, ja o Spring Inititializr, que adiciona todas as dependencias que você deseja automaticamente
 
 
 
