@@ -1,0 +1,41 @@
+Problemas do Spring : 
+
+*Configurações de Beans em .xml
+
+*Dispatcher Servlet e view resolver em web.xml
+
+*Setup manual de Banco de Dados
+
+*Muito tempo gasto em configuração
+
+*Perda de foco em valor
+
+O que é Spring Boot?
+
+Facilita setup de projetos em Spring;
+
+Starters : dependencias aotuconfiguráveis
+
+\\FatJar,UberJar//
+
+\\Profiles//
+Multiplos Ambientes
+Ambientes para desenvolvimento, teste e produção;
+
+*Configurações próprias para cada ambiente
+*Ambientes com sua própria configuração: dev, production
+
+Spring Boot Properties
+@Configuration
+@ConfigurationProperties
+
+
+Biblioteca Lombok  > Getters e setter em tempo de compilação
+
+Configuração com YAML->
+é importante que seja contruido corretamente para que não haja erro
+
+Command line -> O terminal tem o poder de definir propriedade
+-Dlocaldavariavel
+
+
