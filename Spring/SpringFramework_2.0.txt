@@ -1,0 +1,114 @@
+Inversão de controle ->
+
+Inversion of Control ou IoC, trata-se do rediricionamento do fluxo de execução de um código retirando parcialmente o controle
+sobre ele e delegando-o para um container.
+O principal propósito é minimizar o acoplamento do código.
+
+Injeção de Depêndencia->
+
+Injeção de dependência é um padrão de desenvolvimento com a finalidade de manter baixo o nível de acoplamento entre módulos de um sistema.
+
+Beans->
+
+Objeto que é instanciado(criado), montado e gerenciado por um container através do príncipio da inversão de controle.
+
+Scopes->>
+StandAlone:
+Singletone, Prototype
+
+
+conceitos web
+
+HTTP-Request
+
+Um bean será criado para cada requisição HTTP.
+
+
+HTTP Session->
+
+Um bean será criado para a sessão de usuário.É priciso acessar a mesma solicitação duas vezes para testar os escopos específicos da web
+
+
+HTTP Global->
+
+Ou Application Scope cria um bean para o ciclo de vida do contexto da aplicação. Objetos compartilhados por toda a aplicação
+
+
+Autowired 
+
+Uma anotação(indicação) onde deverá ocorrer uma injeção automática de dependencia
+*byName: É buscado um método set que corresponde ao nome do Bean;
+*byType: É considerado o tipo da classe para inclusão do Bean;
+*byConstrutor: Usamos o construtor para incluir a dependencia;
+
+		||||||||||||SPRING BOT||||||||||||||
+
+ -> Tem foco na configuração automática
+
+Starters
+
+Diminuir imensamente o código do xml e seu descritor de dependencias(Encapsulamento de diversas dependencias em uma só)
+
+Benefícios:
+*Coesão
+*Versão
+*Otimização do tempo
+*Configuração simples
+*Foco no negócio
+
+Alguns Starters:
+
+Listagem de alguns starters mais utilizados
+
+Spring-boot-starter*
+*data-jpa: Integração ao banco de dados via JPA-Hibernate;
+*data-mongodb: Interação com banco de dados MongoDB;
+*web: Inclusão do container Tomcat para aplicações ou arquitetura REST;
+*web-service: Webservices baseados na arquitetura SOAP;
+*bathc: Implementação de JOBs de processos.
+*test: Disponibilização de recursos para testes unitários como JUNIT;
+*openfeign: Cliente HTTP baaseado em interfaces
+*actuator: Gerenciamento de monitoramento da aplicação
+
+//@Autowired - > Injeção de dependencia// Um objeto depende de uma classe para ser instanciado
+
+//@Beans-> Quando não tem acesso ao código fonte e @Component mais genérico
+
+Application Properties
+//@Values -> Passar um valor por meio do .properties// Caso essa propriedade(variável) não seja encontrado pode ser atribuido diretamente no @Values(${"name:Joao"})<-Dessa maneira
+
+@Configuration -> Diretamente ligado com a configurações de beans e properties
+@ConfigurationProperties(prefix = "remete")-> Para especificar um caminho do properties
+
+
+		||||||||||JPA-Java Persistence API||||||||||||
+ORM:
+ Object-Relational Mapping, Em português, mapeamento objeto relacional, é um recurso para aproximar o paradigma da orientação a objetos
+ ao contexto de banco de dados relacional.
+ O uso de ORM é realizado através do mapeamento de objeto para uma tabela por uma biblioteca ou framework.
+
+*Transformação de objetos para dados do banco de dados e vice Versa
+
+//JPA é uma especificação baseada em interfaces, que através de um framework realiza operações de persistência de objetos em Java;
+Hibernate é uma implementação de JPA
+//Mapeamento do JPA//
+*Identificação: 
+@Entity
+
+*Definição:
+//Definições do tipo : Chave, not null, quantidade de caractéres
+
+*Relacionamento:
+//Relacionamento entre tabelas
+
+*Herança:
+
+*Persistência:
+Ao persistir um obejeto, irão atribuir ao banco de dados
+
+EntityManager
+
+
+
+
+

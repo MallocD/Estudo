@@ -1,0 +1,28 @@
+Verbos HTTP:
+
+GET-> Requisitar informações da url
+POST-> Inserir uma informação
+PUT-Atualizar um objeto como um todo
+PATCH-> Atualizar algo em específico, como uma senha
+DELETE -> Deleta
+
+Códigos HTTP->
+1xx-> Informações
+2xx-> Sucesso na requisição
+3xx-> Redirecionamentos
+4xx-> Erro no lado do cliente
+5xx-> Erro no lado do servidor
+
+Sempre tratar exceptions//
+
+\\Idempotência//
+
+
+*Uma requisição idempotente é aquele que, independente da quantidade de vezes que se execute, o efeito é o mesmo que da primeira execução;
+
+*Post-> Irá alterar o estado no servidor, cria recurso, logo, não é idempotente
+
+*GET,PUT,DELETE,HEAD,OPTIONS E TRACE são idempotentes
+
+\\n+1 em REST APIs//
+Fazendo requests mais de uma vez para criar um componente na API para o frontEnd
