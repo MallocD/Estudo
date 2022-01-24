@@ -28,19 +28,32 @@ será executado primeiro, qual classe será executada primeiro e etc.
  
 *É qualquer classe que é gerenciada pelo Ioc(Controller)
 
-Steryotypes : 
+Steryotypes : São permitidos somente em classes, sendo impossível de utiliza-las em métodos
 Anotações Spring Bean
 
-@Repository : Direto com o banco de dados só pode ser usado em classes/Persistência;
+@Repository : Direto com o banco de dados só pode ser usado em classes/Persistência;Não permitidos em métodos
 
-@Service: Regras de negócios em classes, parte pesada do programa, parte lógica
+@Service: Regras de negócios em classes, parte pesada do programa, parte lógica;Não permitidos em métodos, somente em classes
 
 @Controller: Controla quem chama alguma coisa e de que maneira será aplicado
 /@RestController: Retorna dados em JSON 
 
-@Configuration: Configuração básica de uma bean
+@Configuration: Configuração básica de uma bean/personalizada
 
 @Component: Simples sem nem um quisito
+
+////////////////////////////////////////////////////////////////
+@Contoller - Utilizada para a camada de apresentação. Normalmente anotamos classes que representam a interação do usuário, 
+como managed beans, actions e controllers;
+
+@Service - Utilizada para a camada de aplicação e negócio. Comumente usada para anotar classes que denotam serviços
+de aplicação e de regras de negócio;
+
+@Repository - Utilizada para a camada de persistência. Normalmente anotamos classes que representam um DAO, Repositório etc;
+
+@Component - Utilizada para classes que não se encaixam em nenhuma das anotações acima. É comum anotar classes utils, parsers, helpers,
+processadores de arquivo etc;
+////////////////////////////////////////////////////////////////////
 
 \\\\\Spring Scopes///////
 @Bean
@@ -60,14 +73,14 @@ após o usuário fechar a página
 *Application : Igual ao Session, porém distribuida para diversas aplicações
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
 
-*WeSocket: Como o request, porém sem que precise haver um refresh, atualiza e destroi uma instancia automaticamente
+*WeBSocket: Como o request, porém sem que precise haver um refresh, atualiza e destroi uma instancia automaticamente
 @Scope(value = "websocket", proxyMode = ScopedProxyMode.TARGET_CLASS)
 
 
 \\Injenção de dependencia//
 É uma forma de aplicar inversão de controle em uma classe que utiliza funcionalidades de outras classes.
 
-Proxies e Setter
+Proxies Setter: Como procura e seta as dependências
 
 Autowired
 
