@@ -10,10 +10,11 @@ import org.springframework.stereotype.Component;
 public class StartApp implements CommandLineRunner {//Implementa a interface CommandLineRunner
         @Autowired
         private UserRepository userRepository;
+        @Autowired
+        private User user;
 
         @Override
         public void run(String... args) throws Exception {
-            User user = new User();
             user.setName("João");
             user.setUsername("MallocD");
             user.setPassword("23443");

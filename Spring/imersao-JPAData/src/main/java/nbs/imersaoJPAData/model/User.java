@@ -1,7 +1,9 @@
 package nbs.imersaoJPAData.model;
 
-import javax.persistence.*;
+import org.springframework.stereotype.Component;
 
+import javax.persistence.*;
+@Component//Adicionado para poder fazer a injeção de dependencias
 @Entity//Entidade de indemtificação
 public class User {
     @Id//Chave primária//Id

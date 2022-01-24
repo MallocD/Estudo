@@ -70,15 +70,21 @@ Spring-boot-starter*
 *openfeign: Cliente HTTP baaseado em interfaces
 *actuator: Gerenciamento de monitoramento da aplicação
 
+Components vs Beans :
+
+@Components: Utilzado quando desejamos scannear componentes da aplicação, quando se há acesso ao código fonte ai sim podemos fazer a injeção de dependencias @Autowired;
+@Beans/Classes Externas:Quando desejo injetar a dependencia porém não tenho acesso a classe/metodo,atributo , código fonte
+@Configuration -> Diretamente ligado com a configurações de beans e properties
+
 //@Autowired - > Injeção de dependencia// Um objeto depende de uma classe para ser instanciado
 
-//@Beans-> Quando não tem acesso ao código fonte e @Component mais genérico
+//@Beans-> Quando não tem acesso ao código fonte 
 
 Application Properties
-//@Values -> Passar um valor por meio do .properties// Caso essa propriedade(variável) não seja encontrado pode ser atribuido diretamente no @Values(${"name:Joao"})<-Dessa maneira
+//@Values("${nome da variável}") -> Passar um valor por meio do .properties// Caso essa propriedade(variável) não seja encontrado pode ser atribuido diretamente no @Values(${"name:Joao"})<-Dessa maneira
 
 @Configuration -> Diretamente ligado com a configurações de beans e properties
-@ConfigurationProperties(prefix = "remete")-> Para especificar um caminho do properties
+@ConfigurationProperties(prefix = "remetente")-> Para especificar um caminho do properties
 
 
 		||||||||||JPA-Java Persistence API||||||||||||
@@ -93,15 +99,18 @@ ORM:
 Hibernate é uma implementação de JPA
 //Mapeamento do JPA//
 *Identificação: 
-@Entity
+@Entity-> Entidade
 
 *Definição:
 //Definições do tipo : Chave, not null, quantidade de caractéres
+DDL:DDL é uma linguagem usada para definir estruturas de dados e modificar dados. Por exemplo, os comandos DDL podem ser usados ​​para adicionar,
+remover ou modificar tabelas dentro de um banco de dados. ... Como o DDL é um subconjunto do SQL, ele não inclui todos os comandos SQL possíveis.
 
 *Relacionamento:
 //Relacionamento entre tabelas
 
 *Herança:
+Mecanismo de herança da POO de java nos bancos de dados
 
 *Persistência:
 Ao persistir um obejeto, irão atribuir ao banco de dados

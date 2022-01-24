@@ -92,3 +92,5 @@ Podendo assim modificar o estilo css de um projeto ja criado>
 --Aula 4 CLI
 
 *ng lint -->Verifica se a erros de boas práticas no código
+
+Anuglar CLI gerenciar o processamento do Angular ( Gerenciador/Client)
