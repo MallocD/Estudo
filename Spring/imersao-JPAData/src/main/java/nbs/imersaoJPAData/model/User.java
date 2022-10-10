@@ -3,6 +3,7 @@ package nbs.imersaoJPAData.model;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
+@Getter
 @Component//Adicionado para poder fazer a injeção de dependencias
 @Entity//Entidade de indemtificação
 public class User {

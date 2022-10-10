@@ -1,0 +1,11 @@
+Tipagem estatica:
+Em que o tipo da váriavel deve ser explicito no momento em que for declarada;
+
+Tipagem dinâmica:
+O tipo da váriavel não necessita ser espicificado no momento da sua declaração;
+
+Tipagem forte:
+O tipo da váriavel pode ser convertido por meio de declarações de conversão;
+
+Tipagem fraca:
+O tipo da váriavel é convertido automaticamente sem necessidade de uma conversão manual;

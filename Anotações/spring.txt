@@ -1,0 +1,2 @@
+Gradle tem uma implementação de dependencias mais limpa que é pelo build.gradle,
+já o maven implementa pelo POM.xml e tem uma quantidade de escrita de códigos maior; 

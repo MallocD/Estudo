@@ -1,0 +1,42 @@
+@ Getter e @ Setter->
+-Sobre “@ Getter” e “@ Setter” : São as anotações que fornecem os métodos getters e setters para atributos privados. 
+
+@ NonNull->
+Essa anotação fornece um teste rápido pra verificar se um atributo é nulo, ajudando a evitar NullPointerException.
+
+@ ToString->
+Essa anotação gera uma implementação do método toString. É Só isso.
+
+@ EqualsAndHashCode->
+Fornece os métodos equals() e hachCode().
+É possível personalizar os atributos que serão validados, exemplos de uso:
+@EqualsAndHashCode(exclude={"dataNascimento","idade"})
+
+@ Data->
+Essa anotação é a combinação das anotações: @ ToString, @EqualsAndHashCode, @ Getter e @ Setter. 
+Também fornece a geração de construtores, adicionando um construtor público que leva qualquer campo @NonNull ou final como parâmetros.
+
+Para personalizar melhor os métodos é aconselhável usar as anotações de cada funcionalidade com seus parâmetros.
+
+@ NoArgsConstructor->
+Fornece a criação de um construtor vazio, exemplo de uso:
+
+@ AllArgsConstructor
+Fornece a criação de um construtor com todos os atributos;
+
+
+@RequiredArgsConstructor->
+
+Essa anotação é muito útil na hora de fazer a injeção de dependência, exemplo de uso:
+@Component
+@RequiredArgsConstructor
+public class PessoaGatewayImpl {
+    
+    private final PessoaRepository pessoaRepository;
+    
+    public void save(Pessoa pessoa){
+        pessoaRepository.save(pessoa);
+    }
+    
+}
+O objeto do tipo final foi injetado via construtor usando essa anotação. Pode ser usada para substituir “@ AutoWired” e “@ Inject”.

@@ -1,0 +1,6 @@
+Rever POO
+Rever Testes em javas
+Rever SQL server
+Rever Git
+Rever Projeto Spring Boot
+Fazer uma conexão do banco de dados ORACLE com o projeto Spring boot
